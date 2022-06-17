@@ -1,0 +1,3814 @@
+Startfile from command line: tc_opt.in
+
+
+       ***********************************************************
+       *                    TeraChem v1.9-2021.11-dev            *
+       *  Git Version:                               *
+       *                   Development Version                   *
+       *           Chemistry at the Speed of Graphics!           *
+       ***********************************************************
+       * This program may only be used in connection with        *
+       * a valid license from PetaChem, LLC. Use of this program *
+       * or results thereof indicates acceptance of all terms    *
+       * and conditions stated in the license and that a valid   *
+       * license agreement between the user and PetaChem, LLC    *
+       * exists. PetaChem, LLC does not warrant the correctness  *
+       * of results or their suitability for any purpose.        *
+       * Please email bugs, suggestions, and comments to         *
+       *                  help@petachem.com                      *
+       *                                                         *
+       ***********************************************************
+
+
+       ***********************************************************
+       *  Compiled by alice        Tue 21 Dec 2021 02:45:44 PM EST  *
+       *  Supported architectures: sm_70 sm_80                   *
+       *  Build cuda_11.5.r11.5/compiler.30672275_0              *
+       ***********************************************************
+
+
+ Job started   Wed Jun 15 13:03:09 2022
+ On Adenosine (available memory: 2641 MB)
+
+######################################### RUNTIME INFO ##########################################
+terachem tc_opt.in 
+
+NVRM version: NVIDIA UNIX x86_64 Kernel Module  495.29.05  Thu Sep 30 16:00:29 UTC 2021
+GCC version:  gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) 
+
+	linux-vdso.so.1 (0x00007ffe41dbe000)
+	libcurl.so.4 => /lib/x86_64-linux-gnu/libcurl.so.4 (0x00007fcb03cc6000)
+	libmpi.so.12 => /opt/intel/oneapi/mpi/2021.6.0//lib/release/libmpi.so.12 (0x00007fcb0247e000)
+	libOpenMM.so => /home/mark/Software/OpenMM/lib/libOpenMM.so (0x00007fcb01e1a000)
+	libgpubox.so.1 => /home/mark/Software/TeraChem/lib/libgpubox.so.1 (0x00007fcb01dfe000)
+	libtensorbox.so.1 => /home/mark/Software/TeraChem/lib/libtensorbox.so.1 (0x00007fcb01ddd000)
+	libiobox.so.1 => /home/mark/Software/TeraChem/lib/libiobox.so.1 (0x00007fcb01dc7000)
+	libmoleculebox.so.1 => /home/mark/Software/TeraChem/lib/libmoleculebox.so.1 (0x00007fcb01daf000)
+	libintbox.so.1 => /home/mark/Software/TeraChem/lib/libintbox.so.1 (0x00007fcaf1779000)
+	libsqmbox.so.1 => /home/mark/Software/TeraChem/lib/libsqmbox.so.1 (0x00007fcaf141a000)
+	libgridbox.so.1 => /home/mark/Software/TeraChem/lib/libgridbox.so.1 (0x00007fcaf1232000)
+	libdftbox.so.1 => /home/mark/Software/TeraChem/lib/libdftbox.so.1 (0x00007fcaf114c000)
+	libcibox.so.1 => /home/mark/Software/TeraChem/lib/libcibox.so.1 (0x00007fcaf0dff000)
+	libccbox.so.1 => /home/mark/Software/TeraChem/lib/libccbox.so.1 (0x00007fcaf0b05000)
+	libsimbox.so.1 => /home/mark/Software/TeraChem/lib/libsimbox.so.1 (0x00007fcaf0ae4000)
+	liboptbox.so.1 => /home/mark/Software/TeraChem/lib/liboptbox.so.1 (0x00007fcaf0a9d000)
+	libsandboxbox.so.1 => /home/mark/Software/TeraChem/lib/libsandboxbox.so.1 (0x00007fcaf0a89000)
+	libcuda.so.1 => /lib/x86_64-linux-gnu/libcuda.so.1 (0x00007fcaef2bf000)
+	libcudart.so.11.0 => /home/mark/Software/TeraChem/lib/libcudart.so.11.0 (0x00007fcaef01d000)
+	libcublas.so.11 => /home/mark/Software/TeraChem/lib/libcublas.so.11 (0x00007fcae559e000)
+	libcufft.so.10 => /home/mark/Software/TeraChem/lib/libcufft.so.10 (0x00007fcadcb13000)
+	libcusparse.so.11 => /home/mark/Software/TeraChem/lib/libcusparse.so.11 (0x00007fcacfab8000)
+	libcrypto.so.1.1 => /lib/x86_64-linux-gnu/libcrypto.so.1.1 (0x00007fcacf7e0000)
+	libssl.so.1.1 => /lib/x86_64-linux-gnu/libssl.so.1.1 (0x00007fcacf74d000)
+	libstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007fcacf56b000)
+	libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007fcacf41c000)
+	libiomp5.so => /opt/intel/oneapi/compiler/2022.1.0/linux/compiler/lib/intel64_lin/libiomp5.so (0x00007fcacefe3000)
+	libcilkrts.so.5 => /home/mark/Software/TeraChem/lib/libcilkrts.so.5 (0x00007fcaceda6000)
+	libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007fcaced89000)
+	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007fcaced66000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fcaceb74000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fcb03d76000)
+	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007fcaceb6e000)
+	libnghttp2.so.14 => /lib/x86_64-linux-gnu/libnghttp2.so.14 (0x00007fcaceb45000)
+	libidn2.so.0 => /lib/x86_64-linux-gnu/libidn2.so.0 (0x00007fcaceb24000)
+	librtmp.so.1 => /lib/x86_64-linux-gnu/librtmp.so.1 (0x00007fcaceb02000)
+	libssh.so.4 => /lib/x86_64-linux-gnu/libssh.so.4 (0x00007fcacea94000)
+	libpsl.so.5 => /lib/x86_64-linux-gnu/libpsl.so.5 (0x00007fcacea81000)
+	libgssapi_krb5.so.2 => /lib/x86_64-linux-gnu/libgssapi_krb5.so.2 (0x00007fcacea34000)
+	libldap_r-2.4.so.2 => /lib/x86_64-linux-gnu/libldap_r-2.4.so.2 (0x00007fcace9de000)
+	liblber-2.4.so.2 => /lib/x86_64-linux-gnu/liblber-2.4.so.2 (0x00007fcace9cd000)
+	libbrotlidec.so.1 => /lib/x86_64-linux-gnu/libbrotlidec.so.1 (0x00007fcace9bd000)
+	libz.so.1 => /lib/x86_64-linux-gnu/libz.so.1 (0x00007fcace9a1000)
+	librt.so.1 => /lib/x86_64-linux-gnu/librt.so.1 (0x00007fcace997000)
+	libimf.so => /opt/intel/oneapi/compiler/2022.1.0/linux/compiler/lib/intel64_lin/libimf.so (0x00007fcace309000)
+	libsvml.so => /opt/intel/oneapi/compiler/2022.1.0/linux/compiler/lib/intel64_lin/libsvml.so (0x00007fcacc2a7000)
+	libirng.so => /opt/intel/oneapi/compiler/2022.1.0/linux/compiler/lib/intel64_lin/libirng.so (0x00007fcacbf3d000)
+	libintlc.so.5 => /opt/intel/oneapi/compiler/2022.1.0/linux/compiler/lib/intel64_lin/libintlc.so.5 (0x00007fcacbcc5000)
+	libcublasLt.so.11 => /usr/local/cuda/targets/x86_64-linux/lib/libcublasLt.so.11 (0x00007fcab775a000)
+	libunistring.so.2 => /lib/x86_64-linux-gnu/libunistring.so.2 (0x00007fcab75d8000)
+	libgnutls.so.30 => /lib/x86_64-linux-gnu/libgnutls.so.30 (0x00007fcab7402000)
+	libhogweed.so.5 => /lib/x86_64-linux-gnu/libhogweed.so.5 (0x00007fcab73cb000)
+	libnettle.so.7 => /lib/x86_64-linux-gnu/libnettle.so.7 (0x00007fcab7391000)
+	libgmp.so.10 => /lib/x86_64-linux-gnu/libgmp.so.10 (0x00007fcab730d000)
+	libkrb5.so.3 => /lib/x86_64-linux-gnu/libkrb5.so.3 (0x00007fcab7230000)
+	libk5crypto.so.3 => /lib/x86_64-linux-gnu/libk5crypto.so.3 (0x00007fcab71ff000)
+	libcom_err.so.2 => /lib/x86_64-linux-gnu/libcom_err.so.2 (0x00007fcab71f8000)
+	libkrb5support.so.0 => /lib/x86_64-linux-gnu/libkrb5support.so.0 (0x00007fcab71e9000)
+	libresolv.so.2 => /lib/x86_64-linux-gnu/libresolv.so.2 (0x00007fcab71cd000)
+	libsasl2.so.2 => /lib/x86_64-linux-gnu/libsasl2.so.2 (0x00007fcab71b0000)
+	libgssapi.so.3 => /lib/x86_64-linux-gnu/libgssapi.so.3 (0x00007fcab716b000)
+	libbrotlicommon.so.1 => /lib/x86_64-linux-gnu/libbrotlicommon.so.1 (0x00007fcab7148000)
+	libp11-kit.so.0 => /lib/x86_64-linux-gnu/libp11-kit.so.0 (0x00007fcab7012000)
+	libtasn1.so.6 => /lib/x86_64-linux-gnu/libtasn1.so.6 (0x00007fcab6ffc000)
+	libkeyutils.so.1 => /lib/x86_64-linux-gnu/libkeyutils.so.1 (0x00007fcab6ff5000)
+	libheimntlm.so.0 => /lib/x86_64-linux-gnu/libheimntlm.so.0 (0x00007fcab6fe9000)
+	libkrb5.so.26 => /lib/x86_64-linux-gnu/libkrb5.so.26 (0x00007fcab6f56000)
+	libasn1.so.8 => /lib/x86_64-linux-gnu/libasn1.so.8 (0x00007fcab6eaf000)
+	libhcrypto.so.4 => /lib/x86_64-linux-gnu/libhcrypto.so.4 (0x00007fcab6e77000)
+	libroken.so.18 => /lib/x86_64-linux-gnu/libroken.so.18 (0x00007fcab6e5e000)
+	libffi.so.7 => /lib/x86_64-linux-gnu/libffi.so.7 (0x00007fcab6e52000)
+	libwind.so.0 => /lib/x86_64-linux-gnu/libwind.so.0 (0x00007fcab6e28000)
+	libheimbase.so.1 => /lib/x86_64-linux-gnu/libheimbase.so.1 (0x00007fcab6e16000)
+	libhx509.so.5 => /lib/x86_64-linux-gnu/libhx509.so.5 (0x00007fcab6dc8000)
+	libsqlite3.so.0 => /lib/x86_64-linux-gnu/libsqlite3.so.0 (0x00007fcab6c9f000)
+	libcrypt.so.1 => /lib/x86_64-linux-gnu/libcrypt.so.1 (0x00007fcab6c64000)
+#################################################################################################
+
+Cannot find license.dat file in the TeraChem installation directory /home/mark/Software/TeraChem
+
+
+TRYING THE NETWORK LICENSE...
+Connecting to license server 'license.petachem.com' port '8877'...
+Jobname: input
+Scratch directory: .
+Random number seed: 164978592
+
+XYZ coordinates input.pdb
+Molden File Output: ./input.molden
+Using basis set: 6-31gs
+dmrgstart not found
+Spin multiplicity: 1
+DIIS will use up to 10 vectors.
+Condition number limit for the DIIS overlap matrix is            0
+WF convergence threshold: 3.00e-05
+Using DIIS algorithm to converge WF
+Maximum number of SCF iterations: 100
+Incremental fock with rebuild every 8 iterations
+Will switch to conventional Fock if diffuse functions are detected
+X-matrix tolerance: 1.00e-04
+PRECISION: MIXED
+Single/Double precision threshold: 1.00e-03
+DFT Functional requested: hf
+Method: Hartree-Fock 
+Wavefunction: RESTRICTED
+Initial guess generated by maximum overlap
+
+********************************************
+******* RUNNING GEOMETRY OPTMIZATION *******
+********************************************
+
+Geometry optimization parameters:
+Max number of optimization cycles: 1000
+Convergence threshold (Max grad component): 4.50e-04
+Convergence threshold (energy change): 1.00e-06
+Optimization will be performed in cartesian coordinates
+Maximum of RMSD change allowed between steps is 0.500000
+using L-BFGS method
+Optimization checkpoint file will be dumped every 10 cycles
+Atomic displacement in finite-difference Hessian (Bohr) 0.003000
+Each step will be scaled by 1.00
+Maximum step size in internal coordinates 0.50
+Minimization SCF guess will be regenerated every 10 steps
+Job started from scratch
+SCF:   Initial guess is taken from previous step
+*************WARNING***************
+Unrecognized or unnecessary keywords:
+These are being ignored.
+   $constraints 
+   atom 9
+   atom 38
+   atom 29
+   atom 10
+   atom 7
+   atom 20
+   atom 53
+   atom 52
+   atom 3
+   atom 15
+   atom 18
+   atom 48
+   atom 46
+   atom 13
+   atom 4
+   atom 17
+   atom 31
+   atom 40
+   atom 42
+   atom 8
+   atom 33
+   atom 1
+   atom 30
+   atom 21
+   atom 19
+   atom 25
+   atom 37
+   atom 6
+   atom 2
+   atom 23
+   atom 34
+   atom 26
+   atom 27
+   atom 44
+   atom 12
+   atom 35
+   $end 
+***********************************
+
+using 1 out of 1 CUDA devices
+   Device 0: NVIDIA GeForce RTX 3080, 10009MB, CC 8.6 -- CPU THREAD 0
+-------------------------------------------------------------------
+ CPU Memory Available: 3986.62 MegaWords 
+ GPU Memory Available: 995.20 MegaWords 
+ Maximum recommended basis set size: 11200 basis functions
+ (limited by GPU memory)
+-------------------------------------------------------------------
+Connected!
+Checking your license...
+
+**************************************************************
+  Greetings, Alice Walker! You have 100 licenses in total
+  IN USE: 0
+  AVAILABLE: 100
+**************************************************************
+
+
+
+Basis set:       6-31gs
+Total atoms:     57
+Total charge:    0
+Total electrons: 252 (126-alpha, 126-beta)
+Number electrons modeled by ECPs: 0
+Total orbitals:  582
+Total AO shells: 258 (150 S-shells; 72 P-shells; 36 D-shells; 0 F-shells; 0 G-shells)
+Spin multiplicity: 1
+Nuclear repulsion energy (QM atoms): 3745.558629805792 a.u.
+
+***********************************************************************
+**                                                                   **
+**                              DL-FIND                              **
+**                       Geometry Optimisation                       **
+**               written by Johannes Kaestner, in 2006               **
+**               Copyright:  STFC Daresbury Laboratory               **
+**                           Revision:  406 $                        **
+**                                                                   **
+***********************************************************************
+Atom      1  frozen
+Atom      2  frozen
+Atom      3  frozen
+Atom      4  frozen
+Atom      5  free
+Atom      6  frozen
+Atom      7  frozen
+Atom      8  frozen
+Atom      9  frozen
+Atom     10  frozen
+Atom     11  free
+Atom     12  frozen
+Atom     13  frozen
+Atom     14  free
+Atom     15  frozen
+Atom     16  free
+Atom     17  frozen
+Atom     18  frozen
+Atom     19  frozen
+Atom     20  frozen
+Atom     21  frozen
+Atom     22  free
+Atom     23  frozen
+Atom     24  free
+Atom     25  frozen
+Atom     26  frozen
+Atom     27  frozen
+Atom     28  free
+Atom     29  frozen
+Atom     30  frozen
+Atom     31  frozen
+Atom     32  free
+Atom     33  frozen
+Atom     34  frozen
+Atom     35  frozen
+Atom     36  free
+Atom     37  frozen
+Atom     38  frozen
+Atom     39  free
+Atom     40  frozen
+Atom     41  free
+Atom     42  frozen
+Atom     43  free
+Atom     44  frozen
+Atom     45  free
+Atom     46  frozen
+Atom     47  free
+Atom     48  frozen
+Atom     49  free
+Atom     50  free
+Atom     51  free
+Atom     52  frozen
+Atom     53  frozen
+Atom     54  free
+Atom     55  free
+Atom     56  free
+Atom     57  free
+ call dlf_formstep_init...
+ needhessian =  F
+
+DL-FIND Report:
+===============
+Optimisation algorithm: L-BFGS
+Number of steps in L-BFGS memory ...............         50
+ 
+Trust radius based on energy
+Maximum step length ............................  5.000E-01
+ 
+Coordinate system: Cartesian coordinates
+ 
+Number of atoms ................................         57
+Number of input geometries .....................          2
+Variables to be optimised ......................         63
+Restart information is written every ...........         10 steps
+This run has not been restarted.
+Maximum number of steps ........................       1000
+Maximum number of energy evaluations ...........     100000
+ 
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 0 matrix multiplies
+   1     0.3186941997   -1633.8472144406   -1633.8472144406     0.85  
+   2     0.1061261483      -8.5157018763   -1642.3629163169     0.49  
+   3     0.0434296905      -0.9100565423   -1643.2729728592     0.42  
+   4     0.0188640763      -0.1144419697   -1643.3874148289     0.36  
+   5     0.0042317963      -0.0175103603   -1643.4049251892     0.32  
+   6     0.0016737861      -0.0014849295   -1643.4064101187     0.29  
+   7     0.0003360539      -0.0002074244   -1643.4066175430     0.26  
+   8     0.0001466505      -0.0000364068   -1643.4066539498     0.25  
+   9     0.0000592777      -0.0000034234   -1643.4066573732     0.52  
+  10     0.0000249125      -0.0000010381   -1643.4066584113     0.21  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4066584113 a.u.
+HOMO-LUMO GAP: 8.805 eV
+CENTER OF MASS: {27.542844, 38.003878, 15.721237} ANGS
+DIPOLE MOMENT: {6.697196, -2.002692, -3.374842} (|D| = 7.762265) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0013340264    -0.0009762671     0.0005807089
+    0.0039322488    -0.0005274219    -0.0017845194
+   -0.0020310531     0.0010719652    -0.0005059011
+   -0.0005260607     0.0033508858    -0.0010471381
+    0.0003081780    -0.0011385665     0.0005736438
+    0.0023837135    -0.0019038818     0.0005455093
+   -0.0014258933    -0.0001488540     0.0005012774
+    0.0002622819     0.0010312419     0.0003448448
+    0.0014262186    -0.0016779322    -0.0000695274
+   -0.0008436334     0.0002277690     0.0007061532
+    0.0003620167     0.0002761303     0.0002700553
+   -0.0009862895    -0.0009929131    -0.0002696857
+   -0.0015185482     0.0019837221    -0.0011284608
+    0.0007389410    -0.0012385490     0.0008121756
+   -0.0000994282     0.0000484088    -0.0000957296
+    0.0005618874    -0.0008200047     0.0001613539
+   -0.0004943402     0.0009652094     0.0001767603
+   -0.0007035862    -0.0007639388     0.0003733879
+   -0.0007997551    -0.0003966661     0.0016295489
+    0.0005734385    -0.0017238042    -0.0000275358
+   -0.0003447726    -0.0005482477     0.0002475236
+    0.0007226635    -0.0000459736    -0.0007949355
+    0.0003342813     0.0015637181     0.0006760362
+   -0.0010135421     0.0003652331     0.0000024744
+    0.0000375966     0.0008468238    -0.0004281242
+    0.0007302494    -0.0000687095     0.0011163723
+    0.0001439638     0.0004070970    -0.0004147391
+    0.0001404725     0.0008241994     0.0002535346
+   -0.0004211755    -0.0000812546     0.0000722112
+    0.0002328098    -0.0021635104     0.0000957992
+   -0.0014787868    -0.0028344918    -0.0014567007
+    0.0011117428     0.0000084468    -0.0002577844
+    0.0003546044     0.0011592569     0.0013187112
+   -0.0004483620    -0.0007541264     0.0003952954
+   -0.0001343836     0.0003745906    -0.0004543629
+   -0.0001022132     0.0008495815     0.0009140896
+    0.0003265515    -0.0005112093    -0.0000388637
+    0.0006392840    -0.0002513731    -0.0003748918
+   -0.0000135025    -0.0001102692     0.0004308936
+    0.0014248471     0.0004336009    -0.0005815550
+   -0.0005605468    -0.0011867128     0.0012319429
+   -0.0006758356    -0.0002524818    -0.0016341961
+    0.0004293380     0.0011729586    -0.0007967746
+   -0.0007536056     0.0001137023    -0.0002070874
+    0.0015641228    -0.0004294016    -0.0000642592
+   -0.0017130391    -0.0000727411    -0.0004358573
+   -0.0001706191    -0.0006497615     0.0004893403
+    0.0003813546     0.0015567140     0.0000431700
+    0.0006748366    -0.0002182338     0.0001138489
+   -0.0001654447    -0.0000459486    -0.0008425109
+   -0.0007954317     0.0013163784    -0.0002473812
+   -0.0015019343     0.0006833743     0.0011006981
+    0.0007322723     0.0012774440     0.0000598054
+   -0.0006781520     0.0004610318    -0.0007175425
+    0.0013125560     0.0004573291    -0.0011486016
+    0.0008301535    -0.0006498686     0.0005404000
+   -0.0009386600     0.0003563089     0.0000470998
+---------------------------------------------------
+Net gradient:  3.239534e-09  7.208518e-09  3.656699e-10
+Net torque:    3.352987e-05  2.035019e-05  1.936812e-05
+
+ Energy calculation finished, energy: -1.643406658E+03
+Testing convergence  in cycle    1
+  Max grad  1.5641E-03 Target: 4.5000E-04 converged?   no
+  RMS grad  7.0371E-04 Target: 3.0000E-04 converged?   no
+ Predicted step length 2.0000E-02
+ Trust radius          1.0000E-01
+RMSD coordinate change for step 1 is  1.529e-03
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Density matrix is not well-conditioned, rescale and purify
+Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 21 matrix multiplies
+   1     0.3164431452   -1633.6262891733   -1633.6262891733     0.44  
+   2     0.1050190257      -8.7545086702   -1642.3807978436     0.48  
+   3     0.0428603611      -0.8928762247   -1643.2736740682     0.42  
+   4     0.0186847686      -0.1140319425   -1643.3877060107     0.36  
+   5     0.0042155473      -0.0172866821   -1643.4049926928     0.32  
+   6     0.0016654866      -0.0014718627   -1643.4064645555     0.28  
+   7     0.0003331486      -0.0002057054   -1643.4066702609     0.26  
+   8     0.0001464314      -0.0000359392   -1643.4067062001     0.24  
+   9     0.0000585128      -0.0000038679   -1643.4067100681     0.50  
+  10     0.0000245634      -0.0000010467   -1643.4067111148     0.21  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4067111148 a.u.
+HOMO-LUMO GAP: 8.805 eV
+CENTER OF MASS: {27.542827, 38.003880, 15.721233} ANGS
+DIPOLE MOMENT: {6.698598, -1.997084, -3.378876} (|D| = 7.763785) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0024095409     0.0002888055     0.0005609771
+    0.0039499194    -0.0005386508    -0.0018005014
+   -0.0020423386     0.0011031404    -0.0005313879
+   -0.0008296168     0.0023307186    -0.0001001301
+    0.0006185012     0.0000025999    -0.0004807882
+    0.0023272004    -0.0019891584     0.0006630324
+   -0.0014044616    -0.0001825108     0.0005025759
+    0.0002399326     0.0010580045     0.0003371237
+    0.0014365291    -0.0016855829    -0.0000600941
+   -0.0007758247     0.0004298320     0.0005877951
+    0.0003196389     0.0000778251     0.0003654756
+   -0.0010209065    -0.0010478878    -0.0001927738
+   -0.0005381074     0.0002399806     0.0010553489
+   -0.0001861541     0.0004840343    -0.0013722572
+    0.0001379680    -0.0005491435     0.0005942758
+    0.0003196775    -0.0002501517    -0.0004857629
+   -0.0005060381     0.0009822740     0.0001655844
+   -0.0005955259    -0.0007030176     0.0003764384
+   -0.0007801172    -0.0003969710     0.0016213923
+    0.0005902070    -0.0017520237    -0.0000095349
+    0.0006264574    -0.0001034196    -0.0002259314
+   -0.0002929663    -0.0005267673    -0.0003367312
+   -0.0004568355     0.0018986787     0.0013108286
+   -0.0002699065     0.0000115302    -0.0006907933
+   -0.0000537090     0.0008825039    -0.0002917652
+   -0.0000605600     0.0006894968     0.0017895048
+    0.0003586497     0.0014530485     0.0000380727
+   -0.0000911128    -0.0003112417    -0.0002494416
+   -0.0003659853    -0.0000448222     0.0001007316
+    0.0003023175    -0.0021265978     0.0001041994
+   -0.0001893588    -0.0022865048    -0.0018056659
+   -0.0001886543    -0.0006022637     0.0000765873
+    0.0006461700     0.0008942511     0.0008001104
+   -0.0005584851    -0.0007018616     0.0004836962
+   -0.0008910211     0.0010016009     0.0004963035
+    0.0007057620     0.0001658186    -0.0000909368
+    0.0003745562    -0.0005510415    -0.0000735137
+    0.0006985299    -0.0003477213    -0.0000671477
+   -0.0001204510     0.0000745878    -0.0001022818
+    0.0012954353     0.0009656226     0.0014484070
+   -0.0004455790    -0.0016447881    -0.0007665499
+   -0.0009504036     0.0004972590    -0.0025355785
+    0.0007258897     0.0004395860     0.0002321676
+    0.0018983864    -0.0018682260    -0.0005927697
+   -0.0010341807     0.0014443468     0.0003786137
+   -0.0022306567    -0.0005619876    -0.0000637432
+    0.0003851771    -0.0000103677     0.0000911193
+    0.0004017814     0.0014758842     0.0002430207
+    0.0005833261    -0.0002672707    -0.0000893936
+   -0.0005144580     0.0002366141    -0.0003187425
+    0.0000139749     0.0006090415    -0.0009892999
+   -0.0014560527     0.0006550912     0.0011622559
+    0.0035050408     0.0010364331    -0.0013892467
+   -0.0003159933     0.0004650175     0.0001709821
+   -0.0007052283    -0.0001261993     0.0001031907
+   -0.0003326822     0.0001883120    -0.0002124490
+    0.0001518827    -0.0009057549     0.0000654026
+---------------------------------------------------
+Net gradient: -8.971608e-10  5.362241e-09  1.729438e-09
+Net torque:    3.236333e-05  2.099473e-05  1.897269e-05
+
+ Energy calculation finished, energy: -1.643406711E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle    2
+    Energy  5.2703E-05 Target: 1.0000E-06 converged?   no
+  Max step  5.6006E-03 Target: 1.8000E-03 converged?   no
+  RMS step  2.5198E-03 Target: 1.2000E-03 converged?   no
+  Max grad  1.6448E-03 Target: 4.5000E-04 converged?   no
+  RMS grad  5.2542E-04 Target: 3.0000E-04 converged?   no
+ Predicted step length 1.0125E-02
+ Trust radius          2.0000E-01
+RMSD coordinate change for step 2 is  7.743e-04
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Density matrix is not well-conditioned, rescale and purify
+Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 21 matrix multiplies
+   1     0.3170879050   -1633.6343122998   -1633.6343122998     0.43  
+   2     0.1050002935      -8.7469118440   -1642.3812241438     0.48  
+   3     0.0427736632      -0.8924709782   -1643.2736951219     0.43  
+   4     0.0186765029      -0.1140459271   -1643.3877410491     0.36  
+   5     0.0042085449      -0.0172821211   -1643.4050231702     0.32  
+   6     0.0016651829      -0.0014719262   -1643.4064950964     0.28  
+   7     0.0003334120      -0.0002057110   -1643.4067008074     0.26  
+   8     0.0001464047      -0.0000359461   -1643.4067367535     0.24  
+   9     0.0000584508      -0.0000037269   -1643.4067404804     0.49  
+  10     0.0000244180      -0.0000010196   -1643.4067415000     0.21  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4067415000 a.u.
+HOMO-LUMO GAP: 8.805 eV
+CENTER OF MASS: {27.542824, 38.003882, 15.721243} ANGS
+DIPOLE MOMENT: {6.699412, -1.994124, -3.377833} (|D| = 7.763273) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0021866611    -0.0000412429     0.0006046135
+    0.0039980384    -0.0005744332    -0.0018151354
+   -0.0020382235     0.0011148766    -0.0005594205
+   -0.0007197665     0.0022727941    -0.0001607358
+    0.0005049733     0.0000777666    -0.0004442568
+    0.0022910577    -0.0020165970     0.0007202676
+   -0.0014035666    -0.0002039478     0.0005133316
+    0.0002364014     0.0010670836     0.0003322459
+    0.0014404210    -0.0016862467    -0.0000531889
+   -0.0007433955     0.0004005782     0.0006129924
+    0.0002943465     0.0001137021     0.0003329778
+   -0.0010675483    -0.0010575527    -0.0001933321
+   -0.0005969927     0.0005866204     0.0005281831
+   -0.0000708491     0.0000887805    -0.0007843423
+    0.0002207845    -0.0006811567     0.0005896792
+    0.0002198360    -0.0001290916    -0.0004595713
+   -0.0005070496     0.0010020283     0.0001556990
+   -0.0005379319    -0.0006772054     0.0003857400
+   -0.0007717455    -0.0003985043     0.0016194501
+    0.0006028979    -0.0017668908     0.0000104652
+    0.0006581619    -0.0002137300    -0.0003289993
+   -0.0002964450    -0.0004126908    -0.0002559753
+   -0.0006260740     0.0018937190     0.0012810923
+   -0.0001804637     0.0000141050    -0.0006686042
+   -0.0000872500     0.0008811754    -0.0002271789
+   -0.0000947864     0.0008679008     0.0017099361
+    0.0003929430     0.0014394311     0.0000085285
+   -0.0001073808    -0.0003283748    -0.0002581279
+   -0.0003440513    -0.0000571061     0.0001230277
+    0.0003406571    -0.0021094878     0.0001143672
+   -0.0001163814    -0.0023736953    -0.0018355941
+   -0.0002374480    -0.0005259214     0.0000988754
+    0.0005487853     0.0008801546     0.0007274848
+   -0.0006195672    -0.0006718427     0.0005312324
+   -0.0007975416     0.0010979196     0.0005453366
+    0.0006178895     0.0000580650    -0.0001443920
+    0.0004265245    -0.0006007347    -0.0001226362
+    0.0006314664    -0.0003357932    -0.0001794210
+   -0.0000913257     0.0000997462    -0.0001526109
+    0.0014055700     0.0007574756     0.0006898590
+   -0.0005519970    -0.0013915813     0.0000423422
+   -0.0009428375     0.0007940226    -0.0026286045
+    0.0006375472     0.0002209962     0.0003302333
+    0.0010435206    -0.0010904207    -0.0002532116
+   -0.0000629065     0.0005713493     0.0001067062
+   -0.0022012329    -0.0005751129     0.0000424498
+    0.0003767640     0.0000847119     0.0000132107
+    0.0003719200     0.0012730560     0.0001967883
+    0.0005649225    -0.0001565575    -0.0000741896
+   -0.0004674941     0.0002487572    -0.0002508015
+    0.0000249612     0.0004672585    -0.0009436214
+   -0.0014390236     0.0006678197     0.0012201486
+    0.0035596024     0.0010935984    -0.0015810529
+   -0.0001964685     0.0003831377     0.0002591228
+   -0.0007957178    -0.0001620111     0.0002433068
+   -0.0004305620     0.0002346894    -0.0003121543
+   -0.0000793047    -0.0005153850    -0.0000025382
+---------------------------------------------------
+Net gradient:  2.775704e-09  5.207779e-09 -3.029248e-09
+Net torque:    3.214111e-05  2.142326e-05  1.843528e-05
+
+ Energy calculation finished, energy: -1.643406742E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle    3
+    Energy  3.0385E-05 Target: 1.0000E-06 converged?   no
+  Max step  4.7098E-03 Target: 1.8000E-03 converged?   no
+  RMS step  1.2756E-03 Target: 1.2000E-03 converged?   no
+  Max grad  1.3916E-03 Target: 4.5000E-04 converged?   no
+  RMS grad  3.9909E-04 Target: 3.0000E-04 converged?   no
+ Predicted step length 5.0123E-02
+ Trust radius          4.0000E-01
+RMSD coordinate change for step 3 is  3.833e-03
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Density matrix is not well-conditioned, rescale and purify
+Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 21 matrix multiplies
+   1     0.3198678999   -1633.6266260213   -1633.6266260213     0.44  
+   2     0.1049837341      -8.7543404366   -1642.3809664579     0.48  
+   3     0.0424843846      -0.8928129033   -1643.2737793612     0.42  
+   4     0.0186540901      -0.1140512170   -1643.3878305782     0.36  
+   5     0.0041840753      -0.0172738263   -1643.4051044045     0.31  
+   6     0.0016643531      -0.0014702738   -1643.4065746783     0.28  
+   7     0.0003349240      -0.0002054972   -1643.4067801755     0.25  
+   8     0.0001464712      -0.0000359278   -1643.4068161033     0.24  
+   9     0.0000581003      -0.0000034093   -1643.4068195126     0.49  
+  10     0.0000237420      -0.0000010508   -1643.4068205634     0.21  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4068205634 a.u.
+HOMO-LUMO GAP: 8.805 eV
+CENTER OF MASS: {27.542806, 38.003896, 15.721290} ANGS
+DIPOLE MOMENT: {6.701765, -1.975979, -3.375612} (|D| = 7.759698) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0018647783    -0.0006697230     0.0007514852
+    0.0042119432    -0.0007440344    -0.0018789901
+   -0.0020179086     0.0011776093    -0.0007045656
+   -0.0000270748     0.0023471630    -0.0008420484
+   -0.0002139156     0.0000767850     0.0001237411
+    0.0021193890    -0.0021359474     0.0009918707
+   -0.0014004394    -0.0003048672     0.0005626257
+    0.0002085443     0.0011153896     0.0003083593
+    0.0014652224    -0.0016911692    -0.0000166013
+   -0.0005609770     0.0003439371     0.0006919277
+    0.0001606381     0.0002062906     0.0002060075
+   -0.0012834973    -0.0011399014    -0.0001504022
+   -0.0004403705     0.0012929466    -0.0007746881
+    0.0000062074    -0.0008072847     0.0007224182
+    0.0005768938    -0.0011168023     0.0002376780
+   -0.0001883858     0.0002171978     0.0000545039
+   -0.0005062522     0.0011038190     0.0000990285
+   -0.0002628643    -0.0005668041     0.0004418512
+   -0.0007325684    -0.0004077150     0.0016129113
+    0.0006697996    -0.0018418255     0.0001185635
+    0.0005645345    -0.0009009639    -0.0007487793
+   -0.0000404203     0.0003064221     0.0000435376
+   -0.0011785371     0.0017231477     0.0007650722
+   -0.0000464737     0.0001935280    -0.0001809116
+   -0.0002212646     0.0008487648     0.0000764189
+    0.0000795029     0.0015081464     0.0008921645
+    0.0004794239     0.0009212948    -0.0003494479
+   -0.0000937434     0.0000633670    -0.0000895031
+   -0.0002415714    -0.0001455415     0.0002420094
+    0.0005249223    -0.0020342428     0.0001711208
+   -0.0002243596    -0.0030665744    -0.0018487859
+    0.0000021938     0.0001308273     0.0000795464
+   -0.0001400138     0.0009493651     0.0005554799
+   -0.0009025488    -0.0005301317     0.0007500816
+    0.0000075829     0.0013544556     0.0004294280
+   -0.0001807421    -0.0002370913    -0.0000286201
+    0.0006931897    -0.0008523791    -0.0003815589
+    0.0002713351    -0.0002078671    -0.0008797798
+    0.0001569123     0.0000987305    -0.0001391288
+    0.0016288230     0.0006491663     0.0003212402
+   -0.0007956709    -0.0010215163     0.0006151019
+   -0.0005143871     0.0018644542    -0.0025323101
+   -0.0000979361    -0.0004722480     0.0001875387
+    0.0008459962    -0.0004140113     0.0005727412
+    0.0005968320    -0.0005171939    -0.0003685571
+   -0.0017222631    -0.0003409997     0.0003873829
+   -0.0000389540     0.0002033700    -0.0001673892
+    0.0002984806     0.0005101593     0.0001808729
+    0.0003978153     0.0001746192    -0.0002299023
+   -0.0000295816     0.0001657872    -0.0001145250
+   -0.0002926905     0.0000129893    -0.0002956546
+   -0.0013551544     0.0007552177     0.0015241264
+    0.0021708892     0.0016094744    -0.0018217816
+    0.0002343887    -0.0000891410     0.0001717536
+   -0.0001247520    -0.0000299917     0.0002932671
+   -0.0002145822    -0.0000292566    -0.0003680149
+   -0.0004167814     0.0003908014    -0.0002699116
+---------------------------------------------------
+Net gradient: -2.602534e-10  1.975104e-09 -1.491472e-09
+Net torque:    3.250451e-05  2.106376e-05  1.882842e-05
+
+ Energy calculation finished, energy: -1.643406821E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle    4
+    Energy  7.9063E-05 Target: 1.0000E-06 converged?   no
+  Max step  2.4398E-02 Target: 1.8000E-03 converged?   no
+  RMS step  6.3150E-03 Target: 1.2000E-03 converged?   no
+  Max grad  1.0215E-03 Target: 4.5000E-04 converged?   no
+  RMS grad  3.1321E-04 Target: 3.0000E-04 converged?   no
+ Predicted step length 3.3081E-02
+ Trust radius          5.0000E-01
+RMSD coordinate change for step 4 is  2.530e-03
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Density matrix is not well-conditioned, rescale and purify
+Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 21 matrix multiplies
+   1     0.3203046932   -1633.6278549135   -1633.6278549135     0.43  
+   2     0.1049552452      -8.7530251689   -1642.3808800825     0.48  
+   3     0.0423541052      -0.8928815006   -1643.2737615831     0.42  
+   4     0.0186390905      -0.1140986103   -1643.3878601934     0.36  
+   5     0.0041716348      -0.0172775445   -1643.4051377378     0.31  
+   6     0.0016628033      -0.0014707836   -1643.4066085215     0.28  
+   7     0.0003347571      -0.0002056886   -1643.4068142101     0.25  
+   8     0.0001461020      -0.0000359718   -1643.4068501818     0.24  
+   9     0.0000578608      -0.0000041018   -1643.4068542836     0.49  
+  10     0.0000232912      -0.0000010188   -1643.4068553024     0.21  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4068553024 a.u.
+HOMO-LUMO GAP: 8.805 eV
+CENTER OF MASS: {27.542814, 38.003908, 15.721315} ANGS
+DIPOLE MOMENT: {6.707494, -1.961324, -3.372941} (|D| = 7.759768) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0026494367     0.0002192810     0.0007296054
+    0.0042323137    -0.0007827102    -0.0018880970
+   -0.0020378192     0.0012046273    -0.0007734450
+    0.0000346682     0.0021506760    -0.0008127877
+   -0.0002945469     0.0003089151     0.0000156503
+    0.0020839251    -0.0021670560     0.0010833258
+   -0.0013956278    -0.0003356725     0.0005683780
+    0.0001743278     0.0011336842     0.0003023239
+    0.0014907500    -0.0016926599     0.0000079795
+   -0.0004344209     0.0005872647     0.0006054431
+    0.0000846589    -0.0000108291     0.0002420348
+   -0.0013324105    -0.0012864746     0.0000104901
+    0.0002934252     0.0000052410     0.0007751483
+   -0.0007056261     0.0005802300    -0.0009656754
+    0.0006516002    -0.0011664749     0.0000682861
+   -0.0002360736     0.0001873122     0.0003371179
+   -0.0005208877     0.0011163580     0.0000791317
+   -0.0001670092    -0.0005682237     0.0004944369
+   -0.0007144297    -0.0004147738     0.0016174315
+    0.0007150585    -0.0018899734     0.0001897824
+    0.0007813194    -0.0008745624    -0.0009774918
+   -0.0002508371     0.0002855779     0.0002201985
+   -0.0013839034     0.0017984515     0.0004452437
+    0.0000270931     0.0001830408     0.0000528819
+   -0.0002165744     0.0007937951     0.0002142366
+   -0.0000740000     0.0018312871     0.0004870054
+    0.0004743834     0.0008720186    -0.0004293450
+   -0.0000858087     0.0000908152    -0.0000726291
+   -0.0001744283    -0.0001879807     0.0003285651
+    0.0005973322    -0.0020302941     0.0002142981
+   -0.0000589686    -0.0031728919    -0.0018391696
+   -0.0001401229     0.0002193086     0.0000732289
+   -0.0003723170     0.0010543673     0.0003789223
+   -0.0009684732    -0.0004933382     0.0007965337
+    0.0001722687     0.0013894705     0.0004434760
+   -0.0003250498    -0.0003052382    -0.0000676550
+    0.0008076797    -0.0009457901    -0.0004336849
+    0.0001450055    -0.0001392123    -0.0012813249
+    0.0002227533     0.0000007675     0.0001038879
+    0.0018536972     0.0005135040    -0.0004518577
+   -0.0009367496    -0.0007143348     0.0014964521
+   -0.0001877293     0.0018602609    -0.0019605122
+   -0.0005818366    -0.0002531800    -0.0004351455
+    0.0005013894     0.0000055966     0.0007738906
+    0.0010278865    -0.0010728919    -0.0005189030
+   -0.0014022692    -0.0001059002     0.0003932155
+   -0.0003676590    -0.0000191421    -0.0000607757
+    0.0003094733     0.0003058095     0.0000902469
+    0.0003374932     0.0003028898    -0.0001962160
+    0.0001218494     0.0000800271     0.0000117611
+   -0.0002226872    -0.0002157299    -0.0000211091
+   -0.0012548131     0.0007572111     0.0016603042
+    0.0009317666     0.0019743414    -0.0016461220
+    0.0001396498    -0.0002610459    -0.0002600751
+    0.0005055529     0.0000941342    -0.0000031899
+    0.0003833266    -0.0003481985     0.0000340852
+    0.0003918678    -0.0004516809    -0.0002497895
+---------------------------------------------------
+Net gradient: -1.798414e-12  3.891311e-09 -1.707851e-09
+Net torque:    3.249563e-05  2.105299e-05  1.933521e-05
+
+ Energy calculation finished, energy: -1.643406855E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle    5
+    Energy  3.4739E-05 Target: 1.0000E-06 converged?   no
+  Max step  2.1340E-02 Target: 1.8000E-03 converged?   no
+  RMS step  4.1678E-03 Target: 1.2000E-03 converged?   no
+  Max grad  1.4965E-03 Target: 4.5000E-04 converged?   no
+  RMS grad  4.2002E-04 Target: 3.0000E-04 converged?   no
+ Predicted step length 5.5975E-02
+ Trust radius          5.0000E-01
+RMSD coordinate change for step 5 is  4.281e-03
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Density matrix is not well-conditioned, rescale and purify
+Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 21 matrix multiplies
+   1     0.3204714069   -1633.6289117290   -1633.6289117290     0.44  
+   2     0.1048782898      -8.7521366622   -1642.3810483912     0.49  
+   3     0.0421005329      -0.8927809812   -1643.2738293724     0.43  
+   4     0.0186144379      -0.1140923114   -1643.3879216838     0.36  
+   5     0.0041451264      -0.0172691402   -1643.4051908240     0.32  
+   6     0.0016608955      -0.0014689035   -1643.4066597275     0.28  
+   7     0.0003350470      -0.0002055261   -1643.4068652536     0.26  
+   8     0.0001459516      -0.0000359870   -1643.4069012406     0.24  
+   9     0.0000576398      -0.0000037893   -1643.4069050299     0.49  
+  10     0.0000224957      -0.0000009830   -1643.4069060129     0.20  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4069060129 a.u.
+HOMO-LUMO GAP: 8.806 eV
+CENTER OF MASS: {27.542833, 38.003933, 15.721359} ANGS
+DIPOLE MOMENT: {6.717423, -1.934007, -3.367024} (|D| = 7.758930) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0026078975     0.0000506089     0.0007634293
+    0.0042632484    -0.0008404495    -0.0018967280
+   -0.0020830712     0.0012257350    -0.0008750372
+    0.0001168287     0.0020228957    -0.0008936089
+   -0.0004091944     0.0004256849     0.0000091717
+    0.0020657298    -0.0021731217     0.0011710921
+   -0.0014015129    -0.0003706406     0.0005799644
+    0.0001381087     0.0011367472     0.0002975713
+    0.0015284229    -0.0016845486     0.0000472769
+   -0.0002640058     0.0006442398     0.0006835071
+   -0.0000207706    -0.0000191353     0.0000943093
+   -0.0014179054    -0.0015142079     0.0002343911
+    0.0002673570     0.0003657724     0.0002158297
+   -0.0006125104     0.0003938687    -0.0005824390
+    0.0007192674    -0.0012728797     0.0000192790
+   -0.0002859184     0.0002162218     0.0004771165
+   -0.0005574414     0.0010992761     0.0000552774
+   -0.0000629361    -0.0006067840     0.0005894682
+   -0.0006909760    -0.0004253252     0.0016310022
+    0.0007896293    -0.0019636634     0.0003051096
+    0.0008107900    -0.0008866538    -0.0011574139
+   -0.0002901355     0.0003210172     0.0003314401
+   -0.0017087978     0.0020259892     0.0000121710
+    0.0001974905     0.0000768204     0.0003193899
+   -0.0001652628     0.0006907589     0.0004085320
+   -0.0003811185     0.0022667205    -0.0001574736
+    0.0004271391     0.0008624335    -0.0005249311
+   -0.0000621688     0.0000949452    -0.0000526094
+   -0.0000636034    -0.0002434488     0.0004651656
+    0.0006830085    -0.0020513887     0.0002883680
+    0.0000752782    -0.0033163333    -0.0017644526
+   -0.0002539127     0.0003479438     0.0000106511
+   -0.0006473510     0.0012410692     0.0000700043
+   -0.0010170542    -0.0004625970     0.0008256585
+    0.0003121403     0.0013671817     0.0004660881
+   -0.0004270887    -0.0003370682    -0.0001416021
+    0.0009727078    -0.0010642648    -0.0004618951
+    0.0001096702    -0.0001459719    -0.0015133958
+    0.0001822855    -0.0000754443     0.0002061419
+    0.0018670756     0.0010725355     0.0015891856
+   -0.0008050176    -0.0009770338    -0.0004228860
+   -0.0000328371     0.0020097193    -0.0016885013
+   -0.0008884428    -0.0001193486    -0.0006684211
+    0.0018576268    -0.0009841595     0.0004649146
+   -0.0003479312    -0.0002499425    -0.0002506346
+   -0.0013066497    -0.0000465948     0.0004609348
+   -0.0004923433    -0.0001179962    -0.0000121351
+    0.0004376597     0.0003291138     0.0001688825
+    0.0001813039     0.0002284165    -0.0003373995
+    0.0002985959    -0.0000650968     0.0002322476
+   -0.0000476950    -0.0005111086     0.0004089277
+   -0.0010735181     0.0006826519     0.0018261156
+    0.0003511122     0.0021402210    -0.0018794401
+   -0.0000005342    -0.0003847266    -0.0004088922
+    0.0007463916     0.0000728695    -0.0001245997
+    0.0006668990    -0.0003058055     0.0003512318
+    0.0003598389    -0.0001957114    -0.0002653544
+---------------------------------------------------
+Net gradient:  3.703172e-09  6.660161e-09 -3.893847e-09
+Net torque:    3.205185e-05  2.131439e-05  1.945619e-05
+
+ Energy calculation finished, energy: -1.643406906E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle    6
+    Energy  5.0710E-05 Target: 1.0000E-06 converged?   no
+  Max step  3.7115E-02 Target: 1.8000E-03 converged?   no
+  RMS step  7.0522E-03 Target: 1.2000E-03 converged?   no
+  Max grad  9.7703E-04 Target: 4.5000E-04 converged?   no
+  RMS grad  3.7228E-04 Target: 3.0000E-04 converged?   no
+ Predicted step length 8.5643E-02
+ Trust radius          5.0000E-01
+RMSD coordinate change for step 6 is  6.549e-03
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Density matrix is not well-conditioned, rescale and purify
+Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 21 matrix multiplies
+   1     0.3184129145   -1633.6335072424   -1633.6335072424     0.45  
+   2     0.1048277965      -8.7478186858   -1642.3813259282     0.49  
+   3     0.0417303293      -0.8925958242   -1643.2739217524     0.43  
+   4     0.0185984851      -0.1140815300   -1643.3880032824     0.36  
+   5     0.0041058095      -0.0172562676   -1643.4052595501     0.32  
+   6     0.0016592051      -0.0014659066   -1643.4067254566     0.28  
+   7     0.0003337716      -0.0002052482   -1643.4069307049     0.25  
+   8     0.0001458002      -0.0000360025   -1643.4069667073     0.24  
+   9     0.0000565486      -0.0000033112   -1643.4069700185     0.49  
+  10     0.0000214019      -0.0000010336   -1643.4069710521     0.21  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4069710521 a.u.
+HOMO-LUMO GAP: 8.807 eV
+CENTER OF MASS: {27.542886, 38.003979, 15.721424} ANGS
+DIPOLE MOMENT: {6.736973, -1.889512, -3.352744} (|D| = 7.758734) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0029802702     0.0004607045     0.0006886084
+    0.0041788519    -0.0008398981    -0.0018687015
+   -0.0021856236     0.0012308710    -0.0009701301
+    0.0000786208     0.0022582014    -0.0011874649
+   -0.0004235909     0.0000818371     0.0002405264
+    0.0021463132    -0.0020835939     0.0011438197
+   -0.0014193913    -0.0003672343     0.0005721291
+    0.0000888421     0.0011157133     0.0003001640
+    0.0015831824    -0.0016654233     0.0000994780
+   -0.0000505814     0.0007978970     0.0007736282
+   -0.0001381488    -0.0001082087    -0.0000959850
+   -0.0014586350    -0.0019065206     0.0006261061
+    0.0001692785     0.0005170277     0.0000457854
+   -0.0005281938     0.0006814466    -0.0008776345
+    0.0006660830    -0.0013607473     0.0003793204
+   -0.0001805250     0.0002131400     0.0001762011
+   -0.0006287763     0.0010039365     0.0000519618
+   -0.0000565296    -0.0007494633     0.0007235940
+   -0.0006705002    -0.0004380969     0.0016607746
+    0.0008814802    -0.0020449432     0.0004458155
+    0.0003664708    -0.0008264772    -0.0010454976
+    0.0000759775     0.0003162460     0.0001655991
+   -0.0019293564     0.0024887800    -0.0004745620
+    0.0003747669    -0.0001849191     0.0005420209
+    0.0000171622     0.0005212909     0.0005697154
+   -0.0008769401     0.0025474735    -0.0009397628
+    0.0002474189     0.0009005411    -0.0006327648
+    0.0000218090     0.0001344635     0.0000258454
+    0.0000615786    -0.0002990340     0.0006264369
+    0.0007122765    -0.0021484155     0.0003900722
+   -0.0001071275    -0.0034034064    -0.0015339546
+   -0.0000938505     0.0004569055    -0.0001908240
+   -0.0007864923     0.0015426287    -0.0002956830
+   -0.0009316732    -0.0004943232     0.0007563311
+    0.0003229920     0.0010537012     0.0003330461
+   -0.0003786764    -0.0000989582    -0.0001033753
+    0.0011618909    -0.0011596498    -0.0003698627
+    0.0002308369    -0.0003653413    -0.0013005435
+   -0.0001378236    -0.0000437299     0.0000329883
+    0.0022739295     0.0012105611     0.0012574110
+   -0.0008445150    -0.0007116068     0.0000533043
+   -0.0006024839     0.0023568973    -0.0022855220
+   -0.0004161056    -0.0001791032     0.0001977571
+    0.0026067095    -0.0017830406    -0.0002559355
+   -0.0013800962     0.0004440014     0.0001618977
+   -0.0018290602    -0.0004521257     0.0005267194
+   -0.0000543640     0.0000391858    -0.0000544562
+    0.0006069215     0.0005551080     0.0000499539
+    0.0000862764     0.0001608764    -0.0001813101
+    0.0004044242    -0.0002947399     0.0004677107
+    0.0002893278    -0.0006552852     0.0009267909
+   -0.0008650595     0.0004829593     0.0019010129
+    0.0014475021     0.0016672711    -0.0026611943
+   -0.0002012874    -0.0002648841     0.0001203710
+    0.0001669082    -0.0001771068     0.0000670269
+    0.0001140440     0.0004744322     0.0003184644
+    0.0007738024    -0.0006078142    -0.0000932209
+---------------------------------------------------
+Net gradient:  2.216893e-10  7.271891e-09  2.730697e-09
+Net torque:    3.285084e-05  2.097915e-05  2.062698e-05
+
+ Energy calculation finished, energy: -1.643406971E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle    7
+    Energy  6.5039E-05 Target: 1.0000E-06 converged?   no
+  Max step  6.0824E-02 Target: 1.8000E-03 converged?   no
+  RMS step  1.0790E-02 Target: 1.2000E-03 converged?   no
+  Max grad  1.3801E-03 Target: 4.5000E-04 converged?   no
+  RMS grad  3.9806E-04 Target: 3.0000E-04 converged?   no
+ Predicted step length 1.1340E-01
+ Trust radius          5.0000E-01
+RMSD coordinate change for step 7 is  8.672e-03
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Density matrix is not well-conditioned, rescale and purify
+Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 21 matrix multiplies
+   1     0.2633293601   -1633.6328450853   -1633.6328450853     0.43  
+   2     0.1047097469      -8.7490001579   -1642.3818452432     0.48  
+   3     0.0408972981      -0.8921207716   -1643.2739660148     0.43  
+   4     0.0185757420      -0.1140523710   -1643.3880183858     0.36  
+   5     0.0040179287      -0.0172386232   -1643.4052570090     0.32  
+   6     0.0016586909      -0.0014637439   -1643.4067207529     0.28  
+   7     0.0003254329      -0.0002053486   -1643.4069261015     0.25  
+   8     0.0001458033      -0.0000361092   -1643.4069622107     0.24  
+   9     0.0000525706      -0.0000041338   -1643.4069663445     0.49  
+  10     0.0000205254      -0.0000010452   -1643.4069673897     0.21  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4069673897 a.u.
+HOMO-LUMO GAP: 8.807 eV
+CENTER OF MASS: {27.542975, 38.004039, 15.721455} ANGS
+DIPOLE MOMENT: {6.771391, -1.820803, -3.338266} (|D| = 7.766021) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0013974661    -0.0014797435     0.0007440391
+    0.0040117146    -0.0007866584    -0.0018132619
+   -0.0023124206     0.0012156267    -0.0010568331
+   -0.0009772144     0.0009754343     0.0003685940
+    0.0006030982     0.0012388732    -0.0014130692
+    0.0023230640    -0.0019675321     0.0010320509
+   -0.0014288081    -0.0003367334     0.0005476074
+    0.0000431783     0.0010781743     0.0003077342
+    0.0016408552    -0.0016397595     0.0001540223
+    0.0001518567     0.0010715451     0.0008199513
+   -0.0002349665    -0.0003328951    -0.0002417617
+   -0.0014865403    -0.0023734182     0.0011118808
+   -0.0004516739     0.0016680759    -0.0011911039
+    0.0000660168     0.0002032746    -0.0002706317
+    0.0004459152    -0.0011085924     0.0006071505
+    0.0001283407    -0.0001204650    -0.0000327068
+   -0.0007344510     0.0008362531     0.0000641049
+   -0.0001260961    -0.0009205609     0.0008232508
+   -0.0006498742    -0.0004565076     0.0016826926
+    0.0009396378    -0.0021052599     0.0005400237
+    0.0013969043     0.0005274191    -0.0013984436
+   -0.0012287598    -0.0010447198     0.0004860622
+   -0.0021108348     0.0031732658    -0.0004518931
+    0.0007489350    -0.0006664333     0.0002264938
+    0.0002595851     0.0003707406     0.0006611776
+   -0.0020281287     0.0029206899    -0.0006942220
+    0.0001415912     0.0020486531    -0.0002766004
+   -0.0000614607    -0.0009075386    -0.0003078076
+    0.0001057430    -0.0003364625     0.0007502737
+    0.0006967567    -0.0022701622     0.0004759504
+    0.0010276132    -0.0023651935    -0.0017128275
+   -0.0013771526    -0.0005797671     0.0000012344
+   -0.0003276168     0.0016260924    -0.0008181963
+   -0.0007552030    -0.0005768683     0.0006623297
+   -0.0006336872     0.0009634055     0.0008428663
+    0.0006958194    -0.0001513688    -0.0008174689
+    0.0013263469    -0.0012060117    -0.0001813132
+    0.0002468195    -0.0007401269    -0.0009435634
+   -0.0001846014    -0.0002024650     0.0002558638
+    0.0013406527     0.0027272712     0.0086354531
+    0.0004924345    -0.0015610356    -0.0074739606
+   -0.0008054170     0.0017297038    -0.0011442982
+   -0.0004185571     0.0008071961    -0.0007349117
+   -0.0007645591     0.0005765081    -0.0004523450
+    0.0016163590    -0.0018727170     0.0000304311
+   -0.0019620154    -0.0005546627     0.0002412993
+   -0.0001001638    -0.0003501817     0.0002379392
+    0.0010355709     0.0015703155     0.0003943598
+   -0.0002101174    -0.0005295606    -0.0004306931
+    0.0000560525    -0.0002952461     0.0008694566
+    0.0013801708    -0.0009685687     0.0004777448
+   -0.0008950326     0.0005324584     0.0018301525
+    0.0010712924     0.0020018197    -0.0023343090
+   -0.0004194561    -0.0001926104    -0.0005250336
+    0.0000644599    -0.0001398720     0.0000018785
+    0.0008478887     0.0000247015     0.0007682953
+   -0.0008223946     0.0012522066     0.0000648977
+---------------------------------------------------
+Net gradient:  3.909727e-09  5.667966e-09  6.791864e-09
+Net torque:    3.220744e-05  2.156360e-05  2.092061e-05
+
+ Energy calculation finished, energy: -1.643406967E+03
+Testing convergence  in cycle    8
+    Energy  3.6625E-06 Target: 1.0000E-06 converged?   no
+  Max step  8.0887E-02 Target: 1.8000E-03 converged?   no
+  RMS step  1.4287E-02 Target: 1.2000E-03 converged?   no
+  Max grad  7.4740E-03 Target: 4.5000E-04 converged?   no
+  RMS grad  1.1775E-03 Target: 3.0000E-04 converged?   no
+ Predicted step length 3.8765E-02
+ Trust radius          5.0000E-01
+RMSD coordinate change for step 8 is  2.964e-03
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Density matrix is not well-conditioned, rescale and purify
+Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 21 matrix multiplies
+   1     0.3069306786   -1633.6333763944   -1633.6333763944     0.44  
+   2     0.1047812577      -8.7485415696   -1642.3819179641     0.50  
+   3     0.0411983749      -0.8920142885   -1643.2739322526     0.42  
+   4     0.0186028083      -0.1141163430   -1643.3880485956     0.36  
+   5     0.0040465146      -0.0172802422   -1643.4053288378     0.32  
+   6     0.0016588281      -0.0014732120   -1643.4068020498     0.28  
+   7     0.0003297370      -0.0002069991   -1643.4070090490     0.26  
+   8     0.0001450052      -0.0000363453   -1643.4070453942     0.24  
+   9     0.0000536079      -0.0000038857   -1643.4070492800     0.50  
+  10     0.0000205186      -0.0000010306   -1643.4070503106     0.21  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4070503106 a.u.
+HOMO-LUMO GAP: 8.807 eV
+CENTER OF MASS: {27.542961, 38.004032, 15.721440} ANGS
+DIPOLE MOMENT: {6.762643, -1.835299, -3.338378} (|D| = 7.761857) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0018611958    -0.0008045509     0.0006514892
+    0.0039734523    -0.0007374074    -0.0018006877
+   -0.0022836887     0.0011949467    -0.0009808397
+   -0.0006956695     0.0018601666    -0.0004129911
+    0.0003290795     0.0003104562    -0.0005284047
+    0.0023488544    -0.0019248665     0.0009357809
+   -0.0014347097    -0.0003009659     0.0005404517
+    0.0000717301     0.0010675929     0.0003140769
+    0.0016148748    -0.0016437847     0.0001268245
+    0.0000284422     0.0009230842     0.0008404503
+   -0.0001588247    -0.0002046901    -0.0002179152
+   -0.0014273238    -0.0022293721     0.0009483933
+   -0.0007490194     0.0020253131    -0.0015895590
+    0.0003047290    -0.0002737094     0.0002349862
+    0.0003817905    -0.0010088107     0.0006409204
+    0.0001822481    -0.0001616344    -0.0001382349
+   -0.0007077480     0.0008447920     0.0000874308
+   -0.0002347682    -0.0009201093     0.0007607274
+   -0.0006693700    -0.0004480544     0.0016777128
+    0.0008865160    -0.0020475421     0.0004614355
+    0.0005520690     0.0000430368    -0.0009441223
+   -0.0003212750    -0.0005361306     0.0000800355
+   -0.0017110034     0.0029177813    -0.0003468578
+    0.0004363806    -0.0004934620     0.0002600205
+    0.0002540700     0.0004209636     0.0004929771
+   -0.0015085417     0.0023784544    -0.0005833550
+    0.0000797257     0.0015462022    -0.0004563432
+    0.0000335003    -0.0003705996    -0.0000720318
+    0.0000219295    -0.0003071569     0.0006491502
+    0.0006153416    -0.0022728878     0.0004266540
+    0.0001702869    -0.0026694015    -0.0015659100
+   -0.0005088609    -0.0002291421    -0.0001512247
+   -0.0002879727     0.0015914197    -0.0004372748
+   -0.0006918634    -0.0006113041     0.0006197893
+   -0.0003462451     0.0007285589     0.0004090320
+    0.0003635821     0.0001450364    -0.0003236036
+    0.0012302626    -0.0011391220    -0.0001654981
+    0.0002430469    -0.0007317034    -0.0007567805
+   -0.0002409558    -0.0001029400     0.0001319544
+    0.0023509902     0.0017512895     0.0015967826
+   -0.0005080136    -0.0008226394    -0.0004834009
+   -0.0010274501     0.0017484768    -0.0017098089
+    0.0000225094     0.0005494598    -0.0001255176
+    0.0010918947    -0.0010606800    -0.0008923273
+   -0.0003490215    -0.0001042310     0.0004527552
+   -0.0021771735    -0.0007072101     0.0001951854
+    0.0001183937    -0.0001908981     0.0001619757
+    0.0007931725     0.0012208964    -0.0000566090
+    0.0000554490    -0.0001170036     0.0000719157
+    0.0000820029    -0.0003005113     0.0005475599
+    0.0009282077    -0.0005269916     0.0005359117
+   -0.0010086638     0.0005315978     0.0016900534
+    0.0017514155     0.0015930955    -0.0022460847
+   -0.0003325121    -0.0000381080    -0.0001258695
+   -0.0000539327    -0.0001236754     0.0000246957
+    0.0003199146     0.0002592850     0.0004101159
+   -0.0003400522     0.0005093929     0.0001340086
+---------------------------------------------------
+Net gradient:  6.879891e-09  1.835211e-09  1.012299e-09
+Net torque:    3.059115e-05  2.265599e-05  2.019423e-05
+
+ Energy calculation finished, energy: -1.643407050E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle    9
+    Energy  8.2921E-05 Target: 1.0000E-06 converged?   no
+  Max step  2.2430E-02 Target: 1.8000E-03 converged?   no
+  RMS step  4.8840E-03 Target: 1.2000E-03 converged?   no
+  Max grad  9.2821E-04 Target: 4.5000E-04 converged?   no
+  RMS grad  3.3910E-04 Target: 3.0000E-04 converged?   no
+ Predicted step length 2.4389E-02
+ Trust radius          5.0000E-01
+RMSD coordinate change for step 9 is  1.865e-03
+
+**** resetting density ****
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Density matrix is not well-conditioned, rescale and purify
+Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 21 matrix multiplies
+   1     0.3072872890   -1633.6327223960   -1633.6327223960     0.44  
+   2     0.1048510205      -8.7492826315   -1642.3820050275     0.48  
+   3     0.0410698435      -0.8919921110   -1643.2739971385     0.42  
+   4     0.0186144251      -0.1140941640   -1643.3880913024     0.36  
+   5     0.0040354181      -0.0172669389   -1643.4053582414     0.31  
+   6     0.0016597123      -0.0014696993   -1643.4068279407     0.28  
+   7     0.0003284117      -0.0002064240   -1643.4070343646     0.26  
+   8     0.0001453020      -0.0000362826   -1643.4070706472     0.24  
+   9     0.0000524204      -0.0000038564   -1643.4070745037     0.49  
+  10     0.0000206331      -0.0000010508   -1643.4070755545     0.21  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4070755545 a.u.
+HOMO-LUMO GAP: 8.807 eV
+CENTER OF MASS: {27.542978, 38.004055, 15.721445} ANGS
+DIPOLE MOMENT: {6.769918, -1.817313, -3.335588} (|D| = 7.762768) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0020685553    -0.0005103173     0.0005914798
+    0.0039260313    -0.0007158583    -0.0017826168
+   -0.0023012417     0.0011954640    -0.0009837536
+   -0.0006213799     0.0022421072    -0.0007769937
+    0.0002422243    -0.0001311798    -0.0001450434
+    0.0023890650    -0.0018772831     0.0008855683
+   -0.0014403780    -0.0002849504     0.0005368515
+    0.0000673290     0.0010612022     0.0003153285
+    0.0016218433    -0.0016409599     0.0001325384
+    0.0000529172     0.0008478640     0.0009048820
+   -0.0001652577    -0.0001221889    -0.0002978199
+   -0.0014402711    -0.0023138541     0.0010182828
+   -0.0008411767     0.0021807744    -0.0017832850
+    0.0003862075    -0.0003227099     0.0003084423
+    0.0003547930    -0.0009981248     0.0007304602
+    0.0002212353    -0.0001881635    -0.0002260212
+   -0.0007227275     0.0008171376     0.0000946252
+   -0.0002826189    -0.0009488823     0.0007536837
+   -0.0006682531    -0.0004499536     0.0016787937
+    0.0008771354    -0.0020360621     0.0004528678
+    0.0001109694    -0.0001099462    -0.0007744093
+    0.0001242407    -0.0003521682    -0.0000917672
+   -0.0015477393     0.0028696518    -0.0004011473
+    0.0003058833    -0.0004475120     0.0003302602
+    0.0003007828     0.0004044634     0.0004585695
+   -0.0013200293     0.0021447539    -0.0006918399
+    0.0000057819     0.0013623242    -0.0005950865
+    0.0000953491    -0.0001531924     0.0000707397
+   -0.0000087375    -0.0003137450     0.0006319872
+    0.0005862370    -0.0022990304     0.0004278444
+   -0.0002388964    -0.0027664925    -0.0015065335
+   -0.0001072524    -0.0000998020    -0.0002221593
+   -0.0002919719     0.0016152090    -0.0003043711
+   -0.0006513858    -0.0006325120     0.0006117562
+   -0.0002093627     0.0005563098     0.0001648625
+    0.0002308195     0.0003043268    -0.0001065087
+    0.0012888263    -0.0011700987    -0.0001558598
+    0.0001859771    -0.0008724699    -0.0005681147
+   -0.0002453071    -0.0000527639     0.0000271654
+    0.0025245264     0.0017870405     0.0007558283
+   -0.0005630676    -0.0007204206     0.0003056497
+   -0.0012867330     0.0019397007    -0.0019075306
+    0.0002910649     0.0003985406     0.0001972929
+    0.0008008690    -0.0009386068    -0.0010113557
+   -0.0001454904    -0.0002185994     0.0005254591
+   -0.0023481765    -0.0008722314     0.0001803206
+    0.0002495091    -0.0000938429     0.0001133728
+    0.0008046363     0.0012922898    -0.0000883540
+    0.0000428392    -0.0001369489     0.0001445439
+    0.0001157247    -0.0003354340     0.0004168669
+    0.0007400953    -0.0003137824     0.0006816537
+   -0.0010934077     0.0005595661     0.0016136388
+    0.0021303600     0.0014004785    -0.0022188764
+   -0.0002072694     0.0000227443     0.0000987852
+   -0.0001570850    -0.0001056730     0.0001028866
+    0.0000147783     0.0003528398     0.0001579001
+   -0.0001142779     0.0001909736     0.0002182589
+---------------------------------------------------
+Net gradient:  1.566558e-09  1.831208e-09 -7.502673e-10
+Net torque:    3.122920e-05  2.212923e-05  2.074293e-05
+
+ Energy calculation finished, energy: -1.643407076E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle   10
+    Energy  2.5244E-05 Target: 1.0000E-06 converged?   no
+  Max step  1.8247E-02 Target: 1.8000E-03 converged?   no
+  RMS step  3.0727E-03 Target: 1.2000E-03 converged?   no
+  Max grad  7.4010E-04 Target: 4.5000E-04 converged?   no
+  RMS grad  2.8260E-04 Target: 3.0000E-04 converged?  yes
+ Predicted step length 1.1968E-01
+ Trust radius          5.0000E-01
+RMSD coordinate change for step 10 is  9.152e-03
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Density matrix is not well-conditioned, rescale and purify
+Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 21 matrix multiplies
+   1     0.2924579019   -1633.6323103634   -1633.6323103634     0.43  
+   2     0.1050088787      -8.7505747895   -1642.3828851529     0.48  
+   3     0.0401922759      -0.8913744747   -1643.2742596276     0.42  
+   4     0.0186370160      -0.1139779004   -1643.3882375280     0.35  
+   5     0.0039540940      -0.0172146073   -1643.4054521353     0.31  
+   6     0.0016617509      -0.0014583741   -1643.4069105093     0.28  
+   7     0.0003158132      -0.0002047647   -1643.4071152740     0.26  
+   8     0.0001461305      -0.0000361111   -1643.4071513852     0.24  
+   9     0.0000490053      -0.0000040399   -1643.4071554251     0.49  
+  10     0.0000211932      -0.0000010412   -1643.4071564663     0.21  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4071564663 a.u.
+HOMO-LUMO GAP: 8.808 eV
+CENTER OF MASS: {27.543043, 38.004172, 15.721457} ANGS
+DIPOLE MOMENT: {6.803537, -1.718994, -3.321654} (|D| = 7.763790) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0019313679    -0.0006027119     0.0004914938
+    0.0037947405    -0.0006718617    -0.0017276293
+   -0.0023683576     0.0012212609    -0.0010311952
+   -0.0006775859     0.0027030825    -0.0012319435
+    0.0002593754    -0.0007670969     0.0003051775
+    0.0025108935    -0.0017503628     0.0007752120
+   -0.0014475822    -0.0002539808     0.0005342469
+    0.0000411581     0.0010634972     0.0003055855
+    0.0016533014    -0.0016343471     0.0001664715
+    0.0002001137     0.0008960140     0.0009576310
+   -0.0002207889    -0.0001566253    -0.0004182364
+   -0.0015598071    -0.0026942607     0.0013485228
+   -0.0009832947     0.0026909516    -0.0024750011
+    0.0005685742    -0.0003839323     0.0005271142
+    0.0003290062    -0.0010083980     0.0009221013
+    0.0002936508    -0.0002779772    -0.0003568977
+   -0.0007941843     0.0007137783     0.0001121315
+   -0.0003960448    -0.0010028484     0.0006992201
+   -0.0006483356    -0.0004631271     0.0016698209
+    0.0008332303    -0.0019949760     0.0004121573
+   -0.0005375317    -0.0001403139    -0.0006384177
+    0.0007420479    -0.0002386909    -0.0002616950
+   -0.0011520481     0.0026997979    -0.0003646361
+    0.0000169132    -0.0003224799     0.0003664365
+    0.0004180150     0.0003760553     0.0003968715
+   -0.0009100615     0.0015804009    -0.0006086435
+   -0.0001660009     0.0011951413    -0.0009316090
+    0.0002178917     0.0000911142     0.0003797139
+   -0.0001399642    -0.0003300643     0.0005655977
+    0.0005229440    -0.0023624314     0.0004261460
+   -0.0009385948    -0.0027022161    -0.0015943970
+    0.0005451035    -0.0000786090    -0.0002057992
+   -0.0001725047     0.0015327139     0.0000577854
+   -0.0005799484    -0.0006811221     0.0006708390
+    0.0000077206     0.0002220166    -0.0003584006
+    0.0000694953     0.0005253500     0.0002392344
+    0.0016305415    -0.0013728117    -0.0001834812
+   -0.0002422900    -0.0014737699    -0.0001006101
+   -0.0000500461     0.0000638218    -0.0001699203
+    0.0027340950     0.0025690331     0.0011722894
+   -0.0002705645    -0.0007161223    -0.0003081010
+   -0.0018716002     0.0025991351    -0.0018044865
+    0.0008006197     0.0000675417     0.0005309238
+    0.0004299815    -0.0009740039    -0.0014652629
+   -0.0000399218    -0.0002136325     0.0009232289
+   -0.0026480779    -0.0012912491     0.0000850484
+    0.0003630194     0.0000741031     0.0000164076
+    0.0008665717     0.0014922585    -0.0001583634
+   -0.0000961897    -0.0002201306     0.0003330091
+    0.0000920598    -0.0003032014     0.0000805065
+    0.0003681818     0.0001710730     0.0007445985
+   -0.0014679585     0.0008057692     0.0013397049
+    0.0026110142     0.0011883970    -0.0016648122
+    0.0003014719     0.0001145696     0.0003518055
+   -0.0002069155     0.0000834558     0.0002737250
+   -0.0004854676     0.0000915074    -0.0005409763
+   -0.0002186926     0.0002515195     0.0004197509
+---------------------------------------------------
+Net gradient:  4.078796e-09  4.151570e-09 -5.790632e-09
+Net torque:    3.320352e-05  2.169242e-05  2.169654e-05
+
+ Energy calculation finished, energy: -1.643407156E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle   11
+    Energy  8.0912E-05 Target: 1.0000E-06 converged?   no
+  Max step  9.2292E-02 Target: 1.8000E-03 converged?   no
+  RMS step  1.5078E-02 Target: 1.2000E-03 converged?   no
+  Max grad  9.2323E-04 Target: 4.5000E-04 converged?   no
+  RMS grad  3.7133E-04 Target: 3.0000E-04 converged?   no
+ Predicted step length 1.8421E-01
+ Trust radius          5.0000E-01
+RMSD coordinate change for step 11 is  1.409e-02
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Density matrix is not well-conditioned, rescale and purify
+Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 21 matrix multiplies
+   1     0.2723707806   -1633.6418858473   -1633.6418858473     0.44  
+   2     0.1052902680      -8.7422102121   -1642.3840960594     0.49  
+   3     0.0386932619      -0.8903101195   -1643.2744061789     0.43  
+   4     0.0186765754      -0.1139530424   -1643.3883592213     0.36  
+   5     0.0038178375      -0.0171753710   -1643.4055345924     0.32  
+   6     0.0016642229      -0.0014499020   -1643.4069844943     0.29  
+   7     0.0003375683      -0.0002039039   -1643.4071883982     0.27  
+   8     0.0001466350      -0.0000361297   -1643.4072245279     0.26  
+   9     0.0000476982      -0.0000038205   -1643.4072283484     0.52  
+  10     0.0000219596      -0.0000010872   -1643.4072294356     0.23  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4072294356 a.u.
+HOMO-LUMO GAP: 8.807 eV
+CENTER OF MASS: {27.543097, 38.004378, 15.721451} ANGS
+DIPOLE MOMENT: {6.849801, -1.554691, -3.303468} (|D| = 7.762070) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0032590176     0.0009271845     0.0003499013
+    0.0037452623    -0.0006714519    -0.0016898180
+   -0.0024102790     0.0013012509    -0.0010991390
+   -0.0008075782     0.0022696853    -0.0010442442
+    0.0003508954    -0.0003589344    -0.0000171720
+    0.0025229725    -0.0017471691     0.0008462137
+   -0.0014252839    -0.0002768108     0.0005611463
+    0.0000153585     0.0011033958     0.0002773237
+    0.0016822962    -0.0016457772     0.0002001315
+    0.0003848993     0.0000919135     0.0014293151
+   -0.0002959749     0.0006544539    -0.0009679091
+   -0.0018216023    -0.0031483425     0.0017132683
+   -0.0010138818     0.0036414554    -0.0038357536
+    0.0008040034    -0.0009044749     0.0014866142
+    0.0004905379    -0.0013340363     0.0010513733
+    0.0001361662    -0.0001112304    -0.0003596524
+   -0.0008860718     0.0006000333     0.0001271987
+   -0.0004196221    -0.0009166495     0.0005321704
+   -0.0006058992    -0.0004850080     0.0016282154
+    0.0007416624    -0.0019100158     0.0003045311
+   -0.0002827216     0.0000418818    -0.0009894867
+    0.0004846582    -0.0003727932     0.0000498655
+   -0.0011845125     0.0023802864     0.0003629147
+    0.0001019559    -0.0002198240    -0.0001498108
+    0.0003232023     0.0004914957     0.0003891985
+   -0.0007199786     0.0014351871     0.0005189668
+   -0.0001355543     0.0016091455    -0.0009709170
+    0.0002005701    -0.0003599373     0.0003367590
+   -0.0002921222    -0.0002286517     0.0004333417
+    0.0005262448    -0.0023223751     0.0003627217
+   -0.0006305618    -0.0022911660    -0.0021289118
+    0.0002118185    -0.0004657360     0.0002148337
+    0.0001712950     0.0010538036     0.0002913373
+   -0.0006901579    -0.0006684446     0.0008879923
+   -0.0001277895     0.0004188198    -0.0003671687
+    0.0003241369     0.0000771375    -0.0000887916
+    0.0022662829    -0.0017744463    -0.0003083932
+   -0.0008387719    -0.0022949761     0.0000017538
+    0.0001593420     0.0001958931    -0.0003197074
+    0.0021929923     0.0034729118     0.0065033128
+    0.0010131570    -0.0003805331    -0.0056053219
+   -0.0022546880     0.0036571484    -0.0011228403
+    0.0007199348    -0.0001751465     0.0002850395
+    0.0000533725    -0.0008454195    -0.0016781239
+    0.0002686810    -0.0006258483     0.0011181473
+   -0.0027052645    -0.0015655753     0.0002238407
+    0.0002376543     0.0002154582    -0.0000934598
+    0.0014989838     0.0025332978     0.0009731093
+   -0.0009139227    -0.0013515490    -0.0008378424
+   -0.0002215384     0.0000746198    -0.0000414131
+    0.0003352358     0.0001554243    -0.0001368140
+   -0.0016148388     0.0010094636     0.0010724666
+    0.0033786020     0.0011960223    -0.0011913813
+    0.0002729511     0.0002873709     0.0002419748
+   -0.0006578623     0.0000011651     0.0003290268
+   -0.0005541051    -0.0001942200    -0.0006803793
+    0.0011544721    -0.0012493602     0.0006204458
+---------------------------------------------------
+Net gradient: -3.695161e-09  2.351544e-09 -2.723274e-10
+Net torque:    3.412281e-05  2.102654e-05  2.327514e-05
+
+ Energy calculation finished, energy: -1.643407229E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle   12
+    Energy  7.2969E-05 Target: 1.0000E-06 converged?   no
+  Max step  1.4602E-01 Target: 1.8000E-03 converged?   no
+  RMS step  2.3208E-02 Target: 1.2000E-03 converged?   no
+  Max grad  5.6053E-03 Target: 4.5000E-04 converged?   no
+  RMS grad  8.9388E-04 Target: 3.0000E-04 converged?   no
+ Predicted step length 5.3370E-02
+ Trust radius          5.0000E-01
+RMSD coordinate change for step 12 is  4.081e-03
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Density matrix is not well-conditioned, rescale and purify
+Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 21 matrix multiplies
+   1     0.2822312119   -1633.6301160535   -1633.6301160535     0.45  
+   2     0.1054870416      -8.7535644845   -1642.3836805380     0.50  
+   3     0.0384923170      -0.8906628637   -1643.2743434017     0.45  
+   4     0.0187152087      -0.1140361919   -1643.3883795937     0.38  
+   5     0.0038015358      -0.0172167308   -1643.4055963245     0.34  
+   6     0.0016675195      -0.0014598221   -1643.4070561466     0.31  
+   7     0.0003366358      -0.0002057647   -1643.4072619113     0.27  
+   8     0.0001461568      -0.0000364351   -1643.4072983465     0.25  
+   9     0.0000461777      -0.0000037975   -1643.4073021439     0.51  
+  10     0.0000224404      -0.0000010588   -1643.4073032027     0.23  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4073032027 a.u.
+HOMO-LUMO GAP: 8.806 eV
+CENTER OF MASS: {27.543048, 38.004456, 15.721396} ANGS
+DIPOLE MOMENT: {6.850870, -1.512835, -3.322897} (|D| = 7.763036) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0017239268    -0.0010321050     0.0006315475
+    0.0039444665    -0.0007657004    -0.0017410639
+   -0.0023226151     0.0013774926    -0.0010492268
+   -0.0005717255     0.0018017899    -0.0008371774
+    0.0001534112     0.0002341396    -0.0002380776
+    0.0023671000    -0.0018826724     0.0010037798
+   -0.0013881707    -0.0003395327     0.0006043617
+    0.0000385177     0.0011956716     0.0002365418
+    0.0016352204    -0.0016844839     0.0001717024
+    0.0002806533     0.0009786264     0.0006949325
+   -0.0002222194    -0.0003205983    -0.0001671270
+   -0.0019066949    -0.0029876758     0.0015427509
+    0.0000164022     0.0018455110    -0.0019535011
+   -0.0001061242     0.0006255477    -0.0001594141
+    0.0007257875    -0.0016249611     0.0008614136
+   -0.0001462137     0.0001530916    -0.0000832694
+   -0.0008499505     0.0006705256     0.0001393983
+   -0.0003652115    -0.0006969333     0.0003193726
+   -0.0005993028    -0.0004879664     0.0015729900
+    0.0006279280    -0.0017999714     0.0001335918
+    0.0003670873    -0.0001432855    -0.0013264364
+   -0.0000354986    -0.0002388514     0.0004182887
+   -0.0010360318     0.0016662364     0.0009358277
+   -0.0000930989     0.0001879349    -0.0003583845
+    0.0000226809     0.0007384120     0.0002754107
+    0.0001815841     0.0011128662     0.0013316318
+    0.0000992666     0.0015288715    -0.0008989536
+    0.0001201537    -0.0004241028     0.0002315464
+   -0.0004125904    -0.0000905472     0.0002367572
+    0.0005454168    -0.0021706198     0.0002288413
+   -0.0003592715    -0.0023424069    -0.0025099733
+    0.0000043509    -0.0004537879     0.0005395360
+    0.0001708677     0.0006382581     0.0007721205
+   -0.0008882316    -0.0005855718     0.0010721205
+    0.0000784970     0.0008073614    -0.0003580070
+    0.0001168866    -0.0003467083    -0.0001454210
+    0.0024325286    -0.0019528613    -0.0004788360
+   -0.0012048093    -0.0022847998    -0.0003585495
+    0.0003255930     0.0002537021    -0.0002584066
+    0.0038993411     0.0036804190    -0.0000990715
+   -0.0005386607    -0.0004892044     0.0010112649
+   -0.0020251545     0.0043037831    -0.0008790040
+    0.0002531905    -0.0005461154     0.0000359068
+   -0.0000960029    -0.0005322486    -0.0010911953
+    0.0007393057    -0.0012161589     0.0007151995
+   -0.0023620435    -0.0013801582     0.0004219502
+   -0.0000472969     0.0002925392    -0.0001899938
+    0.0007110254     0.0005908548    -0.0004927393
+   -0.0003113541     0.0003336213     0.0005017109
+   -0.0002618412     0.0003715164    -0.0003493589
+   -0.0003730347     0.0002986622    -0.0006211630
+   -0.0015966719     0.0010654758     0.0010126731
+    0.0033154185     0.0012657615    -0.0008556962
+    0.0001214050     0.0003186929     0.0001023693
+   -0.0005377498    -0.0000258429     0.0001139544
+   -0.0004510705    -0.0003524022    -0.0005781029
+   -0.0004615151     0.0008609176     0.0002086551
+---------------------------------------------------
+Net gradient:  3.381627e-09  8.509451e-09 -2.144783e-09
+Net torque:    3.167598e-05  2.225640e-05  2.263883e-05
+
+ Energy calculation finished, energy: -1.643407303E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle   13
+    Energy  7.3767E-05 Target: 1.0000E-06 converged?   no
+  Max step  1.9827E-02 Target: 1.8000E-03 converged?   no
+  RMS step  6.7239E-03 Target: 1.2000E-03 converged?   no
+  Max grad  1.2162E-03 Target: 4.5000E-04 converged?   no
+  RMS grad  4.0643E-04 Target: 3.0000E-04 converged?   no
+ Predicted step length 6.5424E-02
+ Trust radius          5.0000E-01
+RMSD coordinate change for step 13 is  5.003e-03
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Density matrix is not well-conditioned, rescale and purify
+Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 21 matrix multiplies
+   1     0.2879612205   -1633.6329497082   -1633.6329497082     0.45  
+   2     0.1055439077      -8.7510513153   -1642.3840010234     0.49  
+   3     0.0383837983      -0.8904534621   -1643.2744544855     0.47  
+   4     0.0187158086      -0.1139926480   -1643.3884471335     0.38  
+   5     0.0037907446      -0.0171913209   -1643.4056384544     0.33  
+   6     0.0016679008      -0.0014541295   -1643.4070925839     0.31  
+   7     0.0003389232      -0.0002049200   -1643.4072975039     0.28  
+   8     0.0001465461      -0.0000363610   -1643.4073338649     0.26  
+   9     0.0000451776      -0.0000032999   -1643.4073371648     0.50  
+  10     0.0000227221      -0.0000010529   -1643.4073382177     0.21  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4073382177 a.u.
+HOMO-LUMO GAP: 8.805 eV
+CENTER OF MASS: {27.543058, 38.004536, 15.721406} ANGS
+DIPOLE MOMENT: {6.863799, -1.451760, -3.315713} (|D| = 7.759723) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0021133316    -0.0006607455     0.0006546856
+    0.0040119128    -0.0008182771    -0.0017517368
+   -0.0023238050     0.0014181042    -0.0010775180
+   -0.0003451301     0.0018202223    -0.0010855492
+   -0.0000857969     0.0002470936    -0.0000464404
+    0.0023087016    -0.0019211286     0.0010993024
+   -0.0013782035    -0.0003768952     0.0006273147
+    0.0000306752     0.0012310550     0.0002143334
+    0.0016395277    -0.0016940247     0.0001839847
+    0.0003413286     0.0010236240     0.0006462965
+   -0.0002521152    -0.0003768124    -0.0001333579
+   -0.0020012378    -0.0031050722     0.0016337241
+    0.0001947010     0.0018046888    -0.0020340875
+   -0.0001996498     0.0007439554    -0.0001529545
+    0.0007968757    -0.0017139509     0.0006785235
+   -0.0002278078     0.0001775139     0.0001717981
+   -0.0008729617     0.0006457900     0.0001390203
+   -0.0003171512    -0.0006516645     0.0002810616
+   -0.0005848128    -0.0004985315     0.0015611746
+    0.0006225614    -0.0017863242     0.0001296227
+    0.0003864034    -0.0003425677    -0.0014066294
+   -0.0000029595    -0.0000371116     0.0004842405
+   -0.0010885300     0.0015065386     0.0008869331
+   -0.0001291306     0.0002942342    -0.0002574399
+   -0.0000608127     0.0007824971     0.0003116655
+    0.0003050373     0.0012032447     0.0013594804
+    0.0001207572     0.0012815678    -0.0009870740
+    0.0001526287    -0.0002158030     0.0002828593
+   -0.0004065151    -0.0000587033     0.0002342573
+    0.0005828699    -0.0021317614     0.0002120404
+   -0.0004389519    -0.0025789702    -0.0025168431
+    0.0001307468    -0.0002301412     0.0005433155
+    0.0000209036     0.0006080833     0.0008043825
+   -0.0009765030    -0.0005546852     0.0011311757
+    0.0003851301     0.0007708973    -0.0005875347
+   -0.0001623848    -0.0004016771    -0.0000158746
+    0.0026984893    -0.0021259168    -0.0005313930
+   -0.0013436109    -0.0023851856    -0.0007861681
+    0.0003194497     0.0001718487    -0.0000390993
+    0.0035016242     0.0037660170     0.0031518498
+    0.0001052879    -0.0001867602    -0.0020246302
+   -0.0019397154     0.0045763910    -0.0005296521
+   -0.0001267377    -0.0003972249    -0.0002802967
+    0.0010275743    -0.0013336643    -0.0012930970
+   -0.0003290042    -0.0006144588     0.0008549238
+   -0.0021794634    -0.0012535223     0.0005204532
+   -0.0002607849     0.0001500437    -0.0001131414
+    0.0008299046     0.0005647387    -0.0004198678
+   -0.0004756444     0.0002829376     0.0003280940
+   -0.0001785778     0.0003752299    -0.0003692735
+   -0.0004926200     0.0001917347    -0.0006391432
+   -0.0014056876     0.0009809848     0.0010927118
+    0.0026554953     0.0013150939    -0.0007459086
+   -0.0002180667     0.0003131880    -0.0001250724
+   -0.0000949777    -0.0000054774    -0.0002959829
+   -0.0000836489    -0.0003598546    -0.0001296993
+   -0.0000722592     0.0005696030     0.0001562354
+---------------------------------------------------
+Net gradient: -3.867569e-09  8.745239e-09 -4.959160e-09
+Net torque:    3.169435e-05  2.161495e-05  2.348341e-05
+
+ Energy calculation finished, energy: -1.643407338E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle   14
+    Energy  3.5015E-05 Target: 1.0000E-06 converged?   no
+  Max step  5.2936E-02 Target: 1.8000E-03 converged?   no
+  RMS step  8.2426E-03 Target: 1.2000E-03 converged?   no
+  Max grad  2.0246E-03 Target: 4.5000E-04 converged?   no
+  RMS grad  4.0156E-04 Target: 3.0000E-04 converged?   no
+ Predicted step length 4.0541E-02
+ Trust radius          5.0000E-01
+RMSD coordinate change for step 14 is  3.100e-03
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Density matrix is not well-conditioned, rescale and purify
+Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 21 matrix multiplies
+   1     0.2871244148   -1633.6349120713   -1633.6349120713     0.43  
+   2     0.1054857578      -8.7490249036   -1642.3839369749     0.48  
+   3     0.0385255899      -0.8904947770   -1643.2744317519     0.42  
+   4     0.0186954293      -0.1140361825   -1643.3884679344     0.35  
+   5     0.0038033356      -0.0172017509   -1643.4056696853     0.31  
+   6     0.0016648083      -0.0014552295   -1643.4071249148     0.28  
+   7     0.0003389771      -0.0002051935   -1643.4073301084     0.25  
+   8     0.0001460720      -0.0000364442   -1643.4073665526     0.24  
+   9     0.0000454680      -0.0000034019   -1643.4073699545     0.50  
+  10     0.0000229252      -0.0000010382   -1643.4073709927     0.22  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4073709927 a.u.
+HOMO-LUMO GAP: 8.805 eV
+CENTER OF MASS: {27.543063, 38.004581, 15.721413} ANGS
+DIPOLE MOMENT: {6.870961, -1.419121, -3.315658} (|D| = 7.760000) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0032160275     0.0005700494     0.0006325843
+    0.0040765646    -0.0008500709    -0.0017675731
+   -0.0023104989     0.0014320337    -0.0010690333
+   -0.0001572182     0.0018009204    -0.0012017046
+   -0.0002750905     0.0003532786     0.0000289013
+    0.0022367852    -0.0019819218     0.0011906086
+   -0.0013707436    -0.0004078214     0.0006421824
+    0.0000377666     0.0012428632     0.0002059168
+    0.0016340095    -0.0017024838     0.0001791292
+    0.0003267535     0.0005495667     0.0008790989
+   -0.0002465161     0.0000948603    -0.0003595472
+   -0.0020235546    -0.0030968755     0.0016132667
+    0.0000255009     0.0022878396    -0.0026325817
+    0.0000031880     0.0002358199     0.0004943254
+    0.0008015070    -0.0017104630     0.0004886505
+   -0.0002441729     0.0001621940     0.0003806856
+   -0.0008834588     0.0006228907     0.0001480839
+   -0.0002699742    -0.0006351350     0.0002789401
+   -0.0005808287    -0.0005053638     0.0015577769
+    0.0006444793    -0.0017930530     0.0001551696
+    0.0005203434    -0.0005100697    -0.0013668247
+   -0.0000986773     0.0000957947     0.0004661353
+   -0.0012580379     0.0015378720     0.0007724333
+   -0.0000444158     0.0002696260    -0.0001688576
+   -0.0001430362     0.0008177141     0.0003336421
+    0.0001220367     0.0014926057     0.0012844976
+    0.0001943860     0.0010933510    -0.0008898495
+    0.0001349206    -0.0000711445     0.0001930614
+   -0.0003432574    -0.0000289531     0.0002754061
+    0.0006173535    -0.0020951081     0.0002012937
+   -0.0003083270    -0.0028399514    -0.0023529954
+    0.0000554283    -0.0000123149     0.0004380227
+   -0.0001369493     0.0006942222     0.0006270374
+   -0.0010326627    -0.0005258453     0.0010983692
+    0.0005205513     0.0007152712    -0.0006674187
+   -0.0002785931    -0.0003985351     0.0000176890
+    0.0028385706    -0.0022174048    -0.0004961759
+   -0.0012747114    -0.0022760398    -0.0012660705
+    0.0001094274     0.0000224218     0.0002516649
+    0.0039229050     0.0037688329     0.0029836118
+   -0.0001192202    -0.0000704275    -0.0015933218
+   -0.0018106736     0.0045151949    -0.0003212998
+   -0.0005538774     0.0000140397    -0.0005626591
+    0.0022330170    -0.0021716944    -0.0015395074
+   -0.0014799498     0.0000274259     0.0009113729
+   -0.0020335735    -0.0010191752     0.0006514897
+   -0.0003872072    -0.0000830523     0.0000361593
+    0.0012786752     0.0012264292     0.0003113912
+   -0.0008810220    -0.0004257955    -0.0005497931
+   -0.0000989452     0.0002989752    -0.0002209815
+   -0.0003425964    -0.0000770291    -0.0006410143
+   -0.0010467492     0.0007537129     0.0013224169
+    0.0018797008     0.0013837936    -0.0010249672
+   -0.0007077305     0.0002731565    -0.0003721528
+    0.0002912407    -0.0000578596    -0.0006835699
+    0.0004126641    -0.0001565605     0.0005592660
+    0.0010405219    -0.0006326125     0.0001376159
+---------------------------------------------------
+Net gradient: -1.560776e-10 -5.560252e-09 -2.508820e-09
+Net torque:    3.204863e-05  2.200597e-05  2.262833e-05
+
+ Energy calculation finished, energy: -1.643407371E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle   15
+    Energy  3.2775E-05 Target: 1.0000E-06 converged?   no
+  Max step  2.8323E-02 Target: 1.8000E-03 converged?   no
+  RMS step  5.1077E-03 Target: 1.2000E-03 converged?   no
+  Max grad  1.5933E-03 Target: 4.5000E-04 converged?   no
+  RMS grad  4.6155E-04 Target: 3.0000E-04 converged?   no
+ Predicted step length 8.2322E-02
+ Trust radius          5.0000E-01
+RMSD coordinate change for step 15 is  6.295e-03
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Density matrix is not well-conditioned, rescale and purify
+Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 21 matrix multiplies
+   1     0.2721150888   -1633.6415066443   -1633.6415066443     0.43  
+   2     0.1054538955      -8.7424816396   -1642.3839882838     0.48  
+   3     0.0383220433      -0.8905590850   -1643.2745473688     0.42  
+   4     0.0186780729      -0.1139927133   -1643.3885400821     0.36  
+   5     0.0037817995      -0.0171808203   -1643.4057209023     0.31  
+   6     0.0016629164      -0.0014498083   -1643.4071707107     0.28  
+   7     0.0003392436      -0.0002043801   -1643.4073750908     0.26  
+   8     0.0001462737      -0.0000363488   -1643.4074114396     0.24  
+   9     0.0000464797      -0.0000043188   -1643.4074157584     0.49  
+  10     0.0000233707      -0.0000010245   -1643.4074167829     0.21  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4074167829 a.u.
+HOMO-LUMO GAP: 8.805 eV
+CENTER OF MASS: {27.543098, 38.004683, 15.721412} ANGS
+DIPOLE MOMENT: {6.894390, -1.339310, -3.312482} (|D| = 7.765237) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0026953865    -0.0001466591     0.0007621783
+    0.0041562623    -0.0008866624    -0.0017816971
+   -0.0023056927     0.0014572316    -0.0010206054
+   -0.0000263861     0.0018194157    -0.0012787336
+   -0.0003946749     0.0003778715     0.0001088099
+    0.0021885260    -0.0020126560     0.0012296217
+   -0.0013633594    -0.0004341292     0.0006593728
+    0.0000525727     0.0012701236     0.0001845208
+    0.0016160883    -0.0017163394     0.0001701874
+    0.0002766571     0.0007546809     0.0006824303
+   -0.0002052516    -0.0001466056    -0.0001394085
+   -0.0020212236    -0.0031212250     0.0016202787
+    0.0000979752     0.0020156225    -0.0023125797
+   -0.0000724090     0.0005857210     0.0001030846
+    0.0007600167    -0.0017098834     0.0005013352
+   -0.0001983855     0.0001582187     0.0003677925
+   -0.0009154757     0.0005432767     0.0001815659
+   -0.0002807239    -0.0006413060     0.0002464483
+   -0.0005801153    -0.0005151588     0.0015509892
+    0.0006510569    -0.0017807048     0.0001630717
+    0.0005857665    -0.0006799530    -0.0011414150
+   -0.0001359238     0.0002170708     0.0003040316
+   -0.0012912293     0.0015667110     0.0006813140
+   -0.0000374050     0.0002389175    -0.0000890586
+   -0.0002085246     0.0008797724     0.0002604127
+    0.0001572128     0.0015168425     0.0010829461
+    0.0003135264     0.0009292757    -0.0006796823
+    0.0000771003     0.0000463017     0.0000270440
+   -0.0003137541     0.0000144616     0.0002949237
+    0.0006103123    -0.0020651734     0.0001689513
+   -0.0001845409    -0.0030836049    -0.0020861342
+   -0.0000152196     0.0001793930     0.0002615978
+   -0.0002641368     0.0008355194     0.0005073167
+   -0.0010597956    -0.0005148561     0.0010116947
+    0.0005385501     0.0005363373    -0.0008092377
+   -0.0002506549    -0.0003414033     0.0000336798
+    0.0030852826    -0.0023454826    -0.0003792371
+   -0.0011739681    -0.0023988139    -0.0014845135
+   -0.0002413026    -0.0001065728     0.0003497216
+    0.0037006313     0.0037056368     0.0055782550
+    0.0005184756     0.0003675270    -0.0039170576
+   -0.0021374750     0.0047458608    -0.0004666462
+   -0.0006875781     0.0003235380    -0.0003508427
+    0.0022378891    -0.0022523322    -0.0017456146
+   -0.0014995276    -0.0001470069     0.0007651847
+   -0.0022132880    -0.0010639815     0.0008335502
+   -0.0002391202    -0.0001931441     0.0001401788
+    0.0010492038     0.0004697178    -0.0006618277
+   -0.0005470977     0.0004097398     0.0003168672
+   -0.0000121905     0.0001685471    -0.0001385010
+   -0.0004071962    -0.0001052384    -0.0004685002
+   -0.0006880352     0.0005011255     0.0015959345
+    0.0017008748     0.0012741611    -0.0017042053
+   -0.0009868583     0.0002370737    -0.0002934466
+    0.0002845937    -0.0001730029    -0.0007422757
+    0.0005144825     0.0003113751     0.0009661639
+    0.0004808484     0.0001248340    -0.0000202379
+---------------------------------------------------
+Net gradient: -1.123410e-09  5.992152e-09 -2.395830e-09
+Net torque:    3.301920e-05  2.211969e-05  2.354447e-05
+
+ Energy calculation finished, energy: -1.643407417E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle   16
+    Energy  4.5790E-05 Target: 1.0000E-06 converged?   no
+  Max step  6.2069E-02 Target: 1.8000E-03 converged?   no
+  RMS step  1.0372E-02 Target: 1.2000E-03 converged?   no
+  Max grad  3.9171E-03 Target: 4.5000E-04 converged?   no
+  RMS grad  6.3506E-04 Target: 3.0000E-04 converged?   no
+ Predicted step length 8.8898E-02
+ Trust radius          5.0000E-01
+RMSD coordinate change for step 16 is  6.798e-03
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Density matrix is not well-conditioned, rescale and purify
+Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 21 matrix multiplies
+   1     0.2711497035   -1633.6460422650   -1633.6460422650     0.43  
+   2     0.1051543096      -8.7379456691   -1642.3839879341     0.48  
+   3     0.0380966522      -0.8906528634   -1643.2746407975     0.42  
+   4     0.0186115697      -0.1139834289   -1643.3886242264     0.35  
+   5     0.0037620730      -0.0171816504   -1643.4058058768     0.32  
+   6     0.0016558110      -0.0014492437   -1643.4072551205     0.30  
+   7     0.0003379562      -0.0002042252   -1643.4074593457     0.26  
+   8     0.0001457239      -0.0000363313   -1643.4074956770     0.24  
+   9     0.0000525682      -0.0000040850   -1643.4074997620     0.50  
+  10     0.0000239228      -0.0000010504   -1643.4075008125     0.21  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4075008125 a.u.
+HOMO-LUMO GAP: 8.805 eV
+CENTER OF MASS: {27.543160, 38.004766, 15.721376} ANGS
+DIPOLE MOMENT: {6.926620, -1.269242, -3.329022} (|D| = 7.789187) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0025443226    -0.0003248258     0.0008494156
+    0.0042036014    -0.0008538245    -0.0017913942
+   -0.0022600887     0.0014333463    -0.0008471774
+    0.0000548134     0.0020999105    -0.0013146752
+   -0.0004267158     0.0001843527     0.0002597923
+    0.0021543293    -0.0020405766     0.0011680132
+   -0.0013587827    -0.0004275868     0.0006543100
+    0.0001084322     0.0012791380     0.0001733805
+    0.0015593600    -0.0017372461     0.0001170322
+    0.0000195850     0.0008230371     0.0004699484
+   -0.0000416645    -0.0002918732     0.0001751894
+   -0.0018694867    -0.0028575182     0.0013678784
+   -0.0002407790     0.0020435426    -0.0021919258
+    0.0001370103     0.0004516252     0.0000929528
+    0.0005783491    -0.0014884311     0.0005754621
+    0.0000072419     0.0000450410     0.0001842454
+   -0.0009353169     0.0004387256     0.0002540926
+   -0.0003695980    -0.0007049014     0.0002174706
+   -0.0006028587    -0.0005179200     0.0015477259
+    0.0006689261    -0.0017660356     0.0001785699
+    0.0006261475    -0.0009095131    -0.0004865485
+   -0.0001534541     0.0003307857    -0.0001828449
+   -0.0011942096     0.0017422790     0.0004620382
+   -0.0000890012     0.0001164525     0.0000650097
+   -0.0002592576     0.0009703878     0.0000265392
+    0.0000380208     0.0014739030     0.0006767499
+    0.0005331542     0.0005521539    -0.0002194035
+   -0.0000652821     0.0003799976    -0.0002682473
+   -0.0002862422     0.0000254208     0.0003253770
+    0.0005344493    -0.0020466626     0.0001113825
+   -0.0000870966    -0.0034850375    -0.0014087306
+   -0.0000385465     0.0004841350    -0.0002143969
+   -0.0003795293     0.0011817412     0.0002532380
+   -0.0010009178    -0.0005195862     0.0007382810
+    0.0004727787     0.0000778763    -0.0010514280
+   -0.0001496088     0.0000324357     0.0002067841
+    0.0032101003    -0.0023815943    -0.0001063224
+   -0.0009602188    -0.0024606793    -0.0014560036
+   -0.0007919502    -0.0003216417     0.0003983768
+    0.0050040321     0.0042759132     0.0027173701
+   -0.0002716030     0.0000108195    -0.0009114088
+   -0.0027618701     0.0048210539    -0.0010588864
+   -0.0005845158     0.0007356596     0.0002887580
+    0.0007810549    -0.0014525908    -0.0016620289
+   -0.0001057215    -0.0011942168     0.0001414108
+   -0.0026138592    -0.0011058551     0.0010657063
+    0.0001568713    -0.0003200212     0.0002661999
+    0.0013733704     0.0010379054    -0.0004087915
+   -0.0006490248     0.0000059872    -0.0000650144
+    0.0001028629    -0.0001194438     0.0000309053
+   -0.0003443348    -0.0000532589    -0.0001313463
+   -0.0002877172     0.0001772186     0.0021113138
+    0.0012669193     0.0011981165    -0.0029159402
+   -0.0008898434     0.0000060464    -0.0000180058
+    0.0002716365    -0.0002193648    -0.0004727927
+    0.0004642959     0.0009476862     0.0011670833
+    0.0002860778     0.0002175160    -0.0001546922
+---------------------------------------------------
+Net gradient:  2.019763e-09  4.309427e-09 -2.098985e-09
+Net torque:    3.467398e-05  2.248600e-05  2.306182e-05
+
+ Energy calculation finished, energy: -1.643407501E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle   17
+    Energy  8.4030E-05 Target: 1.0000E-06 converged?   no
+  Max step  4.4541E-02 Target: 1.8000E-03 converged?   no
+  RMS step  1.1200E-02 Target: 1.2000E-03 converged?   no
+  Max grad  1.1942E-03 Target: 4.5000E-04 converged?   no
+  RMS grad  4.0240E-04 Target: 3.0000E-04 converged?   no
+ Predicted step length 1.4408E-01
+ Trust radius          5.0000E-01
+RMSD coordinate change for step 17 is  1.102e-02
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 0 matrix multiplies
+   1     0.2733454283   -1633.8566670090   -1633.8566670090     0.41  
+   2     0.1059658010      -8.5102662702   -1642.3669332793     0.50  
+   3     0.0363742410      -0.9072309936   -1643.2741642728     0.43  
+   4     0.0187267981      -0.1143146246   -1643.3884788975     0.36  
+   5     0.0035867482      -0.0173702349   -1643.4058491324     0.32  
+   6     0.0016577504      -0.0014541823   -1643.4073033147     0.28  
+   7     0.0003396719      -0.0002048591   -1643.4075081738     0.26  
+   8     0.0001462634      -0.0000366640   -1643.4075448378     0.24  
+   9     0.0000595347      -0.0000034977   -1643.4075483355     0.49  
+  10     0.0000253847      -0.0000010613   -1643.4075493968     0.21  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4075493968 a.u.
+HOMO-LUMO GAP: 8.804 eV
+CENTER OF MASS: {27.543261, 38.004925, 15.721306} ANGS
+DIPOLE MOMENT: {6.983244, -1.123087, -3.326691} (|D| = 7.816259) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0023505202    -0.0004386541     0.0008521280
+    0.0041521077    -0.0007408189    -0.0017654983
+   -0.0022020483     0.0014098572    -0.0006575312
+   -0.0003331409     0.0018249728    -0.0006029480
+    0.0000204258     0.0005187557    -0.0003300777
+    0.0021888375    -0.0020478646     0.0010317733
+   -0.0013513424    -0.0003853087     0.0006363672
+    0.0001751745     0.0012599612     0.0001757108
+    0.0015008911    -0.0017573959     0.0000526517
+   -0.0002658508    -0.0005035134     0.0010043740
+    0.0001619214     0.0009718396    -0.0002728156
+   -0.0017817665    -0.0026378876     0.0011297894
+   -0.0007754620     0.0027414919    -0.0029389530
+    0.0005861561    -0.0003007179     0.0009207617
+    0.0004700622    -0.0012570521     0.0006652196
+    0.0001618396    -0.0000704420    -0.0000260602
+   -0.0009818653     0.0003046526     0.0003268273
+   -0.0005141705    -0.0007188868     0.0000854265
+   -0.0006174925    -0.0005167834     0.0015238637
+    0.0006087567    -0.0017012417     0.0001082586
+    0.0011806459    -0.0006732269    -0.0001203059
+   -0.0007321535    -0.0000087303    -0.0003883520
+   -0.0009945872     0.0017437169     0.0008347298
+   -0.0001175178     0.0000378354    -0.0002286487
+   -0.0003119811     0.0011331951    -0.0002786891
+   -0.0000539761     0.0012135356     0.0011490379
+    0.0008272574     0.0008176345     0.0003631581
+   -0.0003195962     0.0000663074    -0.0006980625
+   -0.0004399139     0.0000338678     0.0002454228
+    0.0004160995    -0.0020213260     0.0000108939
+    0.0005611930    -0.0031925856    -0.0012023860
+   -0.0006702823     0.0001079608    -0.0003160038
+   -0.0000745836     0.0011584115     0.0001887916
+   -0.0009908644    -0.0005398337     0.0005954245
+    0.0000144141    -0.0001183974    -0.0010011290
+    0.0004009932    -0.0000159331    -0.0000808595
+    0.0035214454    -0.0024925475     0.0000551115
+   -0.0012709018    -0.0031303079    -0.0010796210
+   -0.0008075196    -0.0004081573     0.0002300050
+    0.0037350521     0.0041106163     0.0074078876
+    0.0016794381     0.0010237388    -0.0056708306
+   -0.0033781295     0.0052471692    -0.0009521299
+   -0.0003915381     0.0008045533     0.0003905188
+   -0.0012439015    -0.0006572867    -0.0013157737
+    0.0017336485    -0.0020617523    -0.0003667521
+   -0.0029256517    -0.0013488632     0.0011190623
+    0.0003153941    -0.0003231124     0.0002612345
+    0.0014240863     0.0013277893    -0.0004437538
+   -0.0006451719    -0.0001270977    -0.0000304593
+   -0.0000918474    -0.0000878986     0.0000946547
+   -0.0001806807     0.0001121488    -0.0004718525
+   -0.0003643564     0.0003174891     0.0023330874
+    0.0009140198     0.0015619191    -0.0032001760
+   -0.0001892239    -0.0002980827    -0.0000584102
+    0.0000965979    -0.0000948572     0.0000936404
+    0.0004616183     0.0006664947     0.0007665967
+    0.0000599606     0.0001606519    -0.0001543295
+---------------------------------------------------
+Net gradient: -1.416397e-09  2.970753e-09  4.470949e-10
+Net torque:    3.665099e-05  2.165188e-05  2.400059e-05
+
+ Energy calculation finished, energy: -1.643407549E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle   18
+    Energy  4.8584E-05 Target: 1.0000E-06 converged?   no
+  Max step  9.5593E-02 Target: 1.8000E-03 converged?   no
+  RMS step  1.8153E-02 Target: 1.2000E-03 converged?   no
+  Max grad  5.6708E-03 Target: 4.5000E-04 converged?   no
+  RMS grad  9.1294E-04 Target: 3.0000E-04 converged?   no
+ Predicted step length 5.7563E-02
+ Trust radius          5.0000E-01
+RMSD coordinate change for step 18 is  4.402e-03
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Density matrix is not well-conditioned, rescale and purify
+Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 21 matrix multiplies
+   1     0.2728429995   -1633.6441408345   -1633.6441408345     0.43  
+   2     0.1046427844      -8.7404477400   -1642.3845885745     0.49  
+   3     0.0355387047      -0.8902399178   -1643.2748284923     0.43  
+   4     0.0185276506      -0.1138912930   -1643.3887197853     0.35  
+   5     0.0035459717      -0.0171874912   -1643.4059072765     0.31  
+   6     0.0016484261      -0.0014500815   -1643.4073573580     0.28  
+   7     0.0003352943      -0.0002045470   -1643.4075619050     0.25  
+   8     0.0001455230      -0.0000364591   -1643.4075983641     0.24  
+   9     0.0000588431      -0.0000046387   -1643.4076030028     0.49  
+  10     0.0000243588      -0.0000010657   -1643.4076040685     0.22  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4076040685 a.u.
+HOMO-LUMO GAP: 8.804 eV
+CENTER OF MASS: {27.543315, 38.004895, 15.721256} ANGS
+DIPOLE MOMENT: {7.003741, -1.123628, -3.340329} (|D| = 7.840454) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0016068765    -0.0010809581     0.0007762944
+    0.0040247694    -0.0005952155    -0.0017354782
+   -0.0021557126     0.0013252629    -0.0005228373
+   -0.0006434456     0.0021239377    -0.0003439545
+    0.0003866428     0.0001634767    -0.0003943755
+    0.0022993820    -0.0019747415     0.0007902597
+   -0.0013687488    -0.0003074204     0.0005848191
+    0.0002214799     0.0012179108     0.0001953939
+    0.0014598193    -0.0017524448     0.0000050831
+   -0.0004997979    -0.0005587861     0.0009643836
+    0.0002990445     0.0009855724    -0.0001432779
+   -0.0015951786    -0.0022565652     0.0007882261
+   -0.0010734682     0.0026768689    -0.0027169696
+    0.0007124773    -0.0005185091     0.0009491114
+    0.0003673490    -0.0009299994     0.0007537235
+    0.0003093225    -0.0002219814    -0.0002783217
+   -0.0009784078     0.0003090859     0.0003569463
+   -0.0006297373    -0.0008099804     0.0000909063
+   -0.0006279013    -0.0004934021     0.0015250470
+    0.0006075484    -0.0017136234     0.0001170329
+    0.0009269874    -0.0006083487     0.0002648523
+   -0.0005220546    -0.0000908920    -0.0006973790
+   -0.0008755583     0.0019517306     0.0009194016
+   -0.0001038928    -0.0001108046    -0.0003700449
+   -0.0001885314     0.0011142097    -0.0004234081
+   -0.0003837417     0.0010763994     0.0011442714
+    0.0008972581     0.0010022080     0.0005707262
+   -0.0004510894    -0.0000634680    -0.0007987742
+   -0.0005399398    -0.0000868392     0.0002429252
+    0.0003167116    -0.0020863419     0.0000077511
+    0.0005537923    -0.0029621738    -0.0010033757
+   -0.0006937880    -0.0001240557    -0.0004829377
+    0.0001434862     0.0012193863     0.0001254973
+   -0.0008897456    -0.0005626778     0.0004902244
+   -0.0002594433    -0.0002827236    -0.0008826394
+    0.0006835367     0.0001880915    -0.0001318602
+    0.0033779855    -0.0023853228     0.0000586755
+   -0.0017092450    -0.0034847338    -0.0003443023
+   -0.0004281355    -0.0003081285    -0.0000323773
+    0.0064518670     0.0060792640    -0.0013429548
+   -0.0009469382    -0.0008918949     0.0025427530
+   -0.0034662689     0.0051628838    -0.0007604568
+    0.0000410042     0.0005195905     0.0002949038
+   -0.0002767405    -0.0017547591    -0.0016042599
+    0.0005628525    -0.0007216222     0.0001819264
+   -0.0030787941    -0.0015811656     0.0008072505
+    0.0003542362    -0.0001902165     0.0001465289
+    0.0006036008     0.0002729129    -0.0017752209
+    0.0001590333     0.0011005395     0.0015390955
+   -0.0001858581    -0.0001083614     0.0001266584
+    0.0001351113     0.0002761267    -0.0004763065
+   -0.0008395004     0.0006964650     0.0023033728
+    0.0007401377     0.0019992218    -0.0029240068
+    0.0008883421    -0.0006095817    -0.0000210276
+   -0.0000064442     0.0001561787     0.0007662900
+    0.0002012008     0.0000011060    -0.0001662878
+   -0.0006999923     0.0006093113    -0.0000575004
+---------------------------------------------------
+Net gradient:  1.866121e-09  1.193250e-09 -3.424903e-09
+Net torque:    3.458416e-05  2.346866e-05  2.189099e-05
+
+ Energy calculation finished, energy: -1.643407604E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle   19
+    Energy  5.4672E-05 Target: 1.0000E-06 converged?   no
+  Max step  2.4149E-02 Target: 1.8000E-03 converged?   no
+  RMS step  7.2523E-03 Target: 1.2000E-03 converged?   no
+  Max grad  2.5428E-03 Target: 4.5000E-04 converged?   no
+  RMS grad  6.0263E-04 Target: 3.0000E-04 converged?   no
+ Predicted step length 3.1088E-02
+ Trust radius          5.0000E-01
+RMSD coordinate change for step 19 is  2.377e-03
+
+**** resetting density ****
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 0 matrix multiplies
+   1     0.2726663007   -1633.8609174919   -1633.8609174919     0.41  
+   2     0.1056778407      -8.5064068463   -1642.3673243382     0.48  
+   3     0.0352129692      -0.9069449609   -1643.2742692991     0.44  
+   4     0.0186846206      -0.1142750772   -1643.3885443762     0.36  
+   5     0.0034967794      -0.0173899179   -1643.4059342941     0.32  
+   6     0.0016555054      -0.0014593375   -1643.4073936316     0.29  
+   7     0.0003380624      -0.0002058624   -1643.4075994940     0.28  
+   8     0.0001456799      -0.0000368972   -1643.4076363913     0.25  
+   9     0.0000604822      -0.0000036380   -1643.4076400292     0.50  
+  10     0.0000253233      -0.0000010608   -1643.4076410901     0.22  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4076410901 a.u.
+HOMO-LUMO GAP: 8.804 eV
+CENTER OF MASS: {27.543317, 38.004929, 15.721258} ANGS
+DIPOLE MOMENT: {7.010012, -1.096175, -3.336106} (|D| = 7.840374) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0018896186    -0.0007462083     0.0007629450
+    0.0040639669    -0.0006262172    -0.0017454401
+   -0.0021486983     0.0013415160    -0.0005441811
+   -0.0003687087     0.0023940246    -0.0007683909
+    0.0001037094    -0.0001014978     0.0000216939
+    0.0022607361    -0.0019948994     0.0008421070
+   -0.0013621421    -0.0003280178     0.0005905120
+    0.0002076738     0.0012673695     0.0001729762
+    0.0014601269    -0.0017611432     0.0000168532
+   -0.0004332310     0.0004981487     0.0003728501
+    0.0002519396    -0.0001044311     0.0004534727
+   -0.0016524692    -0.0022578090     0.0007944215
+   -0.0005664889     0.0018271735    -0.0018344588
+    0.0002564275     0.0002679327     0.0000849976
+    0.0004952224    -0.0010931855     0.0007087789
+    0.0001745620    -0.0000994372    -0.0001674346
+   -0.0009795006     0.0003310706     0.0003387847
+   -0.0005757666    -0.0007650431     0.0000761165
+   -0.0006191833    -0.0004955482     0.0015183146
+    0.0006021923    -0.0017138734     0.0001225369
+    0.0007092038    -0.0008868887     0.0001687366
+   -0.0002420641     0.0002174035    -0.0006399766
+   -0.0008874563     0.0017605715     0.0008244266
+   -0.0001925543     0.0000396104    -0.0002194887
+   -0.0002279980     0.0011210819    -0.0003622694
+   -0.0001178149     0.0010588607     0.0009869755
+    0.0008604328     0.0006335718     0.0003179117
+   -0.0003801720     0.0002911808    -0.0006012213
+   -0.0005496391    -0.0000948663     0.0002374420
+    0.0003489701    -0.0020669497     0.0000087476
+    0.0001512533    -0.0032634372    -0.0010321353
+   -0.0002469411     0.0001957405    -0.0004978578
+   -0.0000407468     0.0011755706     0.0002618679
+   -0.0009761478    -0.0005359593     0.0005835392
+    0.0001915170    -0.0003114447    -0.0011592220
+    0.0002347069     0.0001602151     0.0001057009
+    0.0035197835    -0.0024824221    -0.0000669950
+   -0.0018940819    -0.0036257935    -0.0005052616
+   -0.0002626388    -0.0002456197    -0.0000683136
+    0.0055991703     0.0056739556     0.0014259343
+   -0.0000555503    -0.0002686390    -0.0001443776
+   -0.0034614539     0.0056205888    -0.0007642908
+   -0.0000262337     0.0001742835     0.0003489681
+    0.0003276006    -0.0021227472    -0.0015810410
+    0.0000386923    -0.0004136438     0.0003098918
+   -0.0029739302    -0.0015665537     0.0009009000
+    0.0002396181    -0.0000763541     0.0000404663
+    0.0010991340     0.0013307888    -0.0004092874
+   -0.0004562965    -0.0001045410     0.0001345222
+   -0.0000541531    -0.0000950579     0.0000142045
+   -0.0001428168     0.0003027665    -0.0003021512
+   -0.0008399565     0.0007350586     0.0022450889
+    0.0008712265     0.0018719993    -0.0027871028
+    0.0008511147    -0.0005834543     0.0001205290
+    0.0001161545     0.0001447472     0.0006265771
+   -0.0000040106     0.0000662894    -0.0002550750
+   -0.0004066708     0.0003301703    -0.0000838173
+---------------------------------------------------
+Net gradient:  6.062286e-10  6.751227e-09  1.410660e-09
+Net torque:    3.474859e-05  2.217128e-05  2.302443e-05
+
+ Energy calculation finished, energy: -1.643407641E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle   20
+    Energy  3.7022E-05 Target: 1.0000E-06 converged?   no
+  Max step  2.3828E-02 Target: 1.8000E-03 converged?   no
+  RMS step  3.9167E-03 Target: 1.2000E-03 converged?   no
+  Max grad  8.5111E-04 Target: 4.5000E-04 converged?   no
+  RMS grad  2.8656E-04 Target: 3.0000E-04 converged?  yes
+ Predicted step length 4.5510E-02
+ Trust radius          5.0000E-01
+RMSD coordinate change for step 20 is  3.480e-03
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 0 matrix multiplies
+   1     0.2711815803   -1633.8598635482   -1633.8598635482     0.44  
+   2     0.1055467514      -8.5075652317   -1642.3674287799     0.49  
+   3     0.0339581118      -0.9068949647   -1643.2743237446     0.43  
+   4     0.0186515204      -0.1142626801   -1643.3885864247     0.37  
+   5     0.0033876088      -0.0173765003   -1643.4059629249     0.31  
+   6     0.0016526903      -0.0014556149   -1643.4074185398     0.29  
+   7     0.0003379566      -0.0002052582   -1643.4076237981     0.26  
+   8     0.0001457626      -0.0000368102   -1643.4076606083     0.25  
+   9     0.0000619483      -0.0000037724   -1643.4076643807     0.50  
+  10     0.0000253858      -0.0000010023   -1643.4076653830     0.21  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4076653830 a.u.
+HOMO-LUMO GAP: 8.803 eV
+CENTER OF MASS: {27.543340, 38.004975, 15.721250} ANGS
+DIPOLE MOMENT: {7.027268, -1.052232, -3.330828} (|D| = 7.847554) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0023720441    -0.0001165192     0.0007200382
+    0.0040764355    -0.0006160076    -0.0017514882
+   -0.0021252019     0.0013352236    -0.0005377736
+   -0.0002634222     0.0024649775    -0.0008522341
+    0.0000075044    -0.0001420633     0.0001218746
+    0.0022350164    -0.0020236469     0.0008613303
+   -0.0013608826    -0.0003350279     0.0005855066
+    0.0002099826     0.0012816822     0.0001671744
+    0.0014537707    -0.0017663547     0.0000121655
+   -0.0004443165     0.0004821300     0.0003548615
+    0.0002521297    -0.0000984401     0.0004849276
+   -0.0016631670    -0.0021682282     0.0007086721
+   -0.0003201456     0.0014014691    -0.0014104457
+    0.0000241145     0.0005413318    -0.0002115566
+    0.0006025085    -0.0011431181     0.0006005252
+    0.0000690773    -0.0000343651    -0.0000446519
+   -0.0009882476     0.0003446052     0.0003262187
+   -0.0005289567    -0.0007365153     0.0000680519
+   -0.0006079573    -0.0004926580     0.0015100963
+    0.0006043368    -0.0017264723     0.0001421485
+    0.0007360148    -0.0009798395     0.0000377863
+   -0.0002363302     0.0003241268    -0.0005353229
+   -0.0009684135     0.0016740048     0.0007801973
+   -0.0001908629     0.0001091839    -0.0001550388
+   -0.0002479903     0.0011226676    -0.0003034778
+   -0.0000976123     0.0011582250     0.0008950750
+    0.0008607079     0.0004909972     0.0001981284
+   -0.0003649986     0.0004235182    -0.0005184700
+   -0.0005607281    -0.0001162319     0.0002506383
+    0.0003762374    -0.0020559079     0.0000122380
+    0.0000466204    -0.0033787633    -0.0010850991
+   -0.0001116480     0.0003138447    -0.0004804297
+   -0.0001428299     0.0011271282     0.0002895713
+   -0.0010597222    -0.0005118223     0.0006612503
+    0.0004483526    -0.0003096253    -0.0012624234
+    0.0000018442     0.0000639651     0.0001477730
+    0.0036704124    -0.0025697685    -0.0001960117
+   -0.0021820243    -0.0038989998    -0.0006169822
+   -0.0000326632    -0.0001823104    -0.0000734582
+    0.0050456908     0.0054695609     0.0033281942
+    0.0006303667     0.0002511097    -0.0020086892
+   -0.0034297371     0.0059843086    -0.0005034602
+   -0.0001262011    -0.0000677301     0.0001364958
+    0.0006280358    -0.0024180404    -0.0014598697
+   -0.0002251799    -0.0001424388     0.0003821948
+   -0.0028382632    -0.0015547374     0.0008853328
+    0.0000486291    -0.0000260557    -0.0000264657
+    0.0011183297     0.0014742818    -0.0000980314
+   -0.0005837165    -0.0003312890    -0.0001741915
+    0.0000136010    -0.0000614798    -0.0000035696
+   -0.0001850509     0.0002305882    -0.0002282120
+   -0.0008514075     0.0008185829     0.0021789431
+    0.0008382072     0.0018958224    -0.0025125298
+    0.0007741952    -0.0005763352     0.0000723329
+    0.0002588262     0.0001400152     0.0004552119
+   -0.0000071611    -0.0000431282    -0.0002485576
+    0.0000859349    -0.0002994243    -0.0000765161
+---------------------------------------------------
+Net gradient:  2.256969e-10  5.768721e-09 -2.017692e-09
+Net torque:    3.542096e-05  2.218911e-05  2.311509e-05
+
+ Energy calculation finished, energy: -1.643407665E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle   21
+    Energy  2.4293E-05 Target: 1.0000E-06 converged?   no
+  Max step  3.1293E-02 Target: 1.8000E-03 converged?   no
+  RMS step  5.7337E-03 Target: 1.2000E-03 converged?   no
+  Max grad  2.0087E-03 Target: 4.5000E-04 converged?   no
+  RMS grad  3.7744E-04 Target: 3.0000E-04 converged?   no
+ Predicted step length 4.7850E-02
+ Trust radius          5.0000E-01
+RMSD coordinate change for step 21 is  3.659e-03
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 0 matrix multiplies
+   1     0.2689291395   -1633.8614476519   -1633.8614476519     0.42  
+   2     0.1052902649      -8.5059937061   -1642.3674413581     0.48  
+   3     0.0323416745      -0.9069051830   -1643.2743465410     0.43  
+   4     0.0186009488      -0.1142713649   -1643.3886179059     0.37  
+   5     0.0032233462      -0.0173787101   -1643.4059966160     0.34  
+   6     0.0016493374      -0.0014551957   -1643.4074518117     0.30  
+   7     0.0003377537      -0.0002052540   -1643.4076570657     0.27  
+   8     0.0001456022      -0.0000368358   -1643.4076939015     0.25  
+   9     0.0000631322      -0.0000031291   -1643.4076970306     0.50  
+  10     0.0000254066      -0.0000010493   -1643.4076980799     0.21  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4076980799 a.u.
+HOMO-LUMO GAP: 8.803 eV
+CENTER OF MASS: {27.543372, 38.005006, 15.721248} ANGS
+DIPOLE MOMENT: {7.047643, -1.015312, -3.325328} (|D| = 7.858622) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0025441424     0.0001583923     0.0006785808
+    0.0040853976    -0.0005998297    -0.0017648442
+   -0.0021033301     0.0012996979    -0.0005518655
+   -0.0002125280     0.0024623236    -0.0008185971
+   -0.0000328957    -0.0001141898     0.0001163420
+    0.0022175892    -0.0020538385     0.0008731923
+   -0.0013685476    -0.0003389658     0.0005693903
+    0.0002048325     0.0012837005     0.0001704648
+    0.0014550115    -0.0017642056     0.0000130954
+   -0.0004358132     0.0006036972     0.0003091562
+    0.0002236701    -0.0002096418     0.0005402030
+   -0.0016381293    -0.0020096628     0.0005715342
+   -0.0000906696     0.0009534059    -0.0009336340
+   -0.0002163705     0.0007241403    -0.0004563055
+    0.0007334437    -0.0011675762     0.0004539681
+   -0.0000625453     0.0000348297     0.0000972421
+   -0.0009986110     0.0003758554     0.0002961100
+   -0.0004510702    -0.0007281267     0.0001088280
+   -0.0005892836    -0.0004846218     0.0015074423
+    0.0006316954    -0.0017768729     0.0002064986
+    0.0007583686    -0.0009625001    -0.0002477349
+   -0.0002509667     0.0003494245    -0.0003236638
+   -0.0011480920     0.0016808942     0.0006368263
+   -0.0001242993     0.0001396168    -0.0000527720
+   -0.0002079331     0.0010544841    -0.0001414293
+   -0.0002285180     0.0013958981     0.0006140887
+    0.0007807959     0.0005024169    -0.0000116735
+   -0.0003115167     0.0004298778    -0.0003862652
+   -0.0005292597    -0.0001559880     0.0003121889
+    0.0004347725    -0.0020696874     0.0000557707
+   -0.0000112723    -0.0033747415    -0.0012551284
+   -0.0000452210     0.0003344998    -0.0003858903
+   -0.0002636489     0.0010800774     0.0002642308
+   -0.0011434660    -0.0004935431     0.0007781463
+    0.0006940733    -0.0002705169    -0.0012606844
+   -0.0002100269    -0.0000727388     0.0001028302
+    0.0037904461    -0.0026380146    -0.0003992073
+   -0.0025431656    -0.0042765192    -0.0007096286
+    0.0002816214    -0.0000410485    -0.0000602746
+    0.0050998938     0.0055887595     0.0035476957
+    0.0007064305     0.0004329929    -0.0022107583
+   -0.0033718444     0.0063019533    -0.0000917567
+   -0.0001850996    -0.0003326221    -0.0002216018
+    0.0011363099    -0.0028763023    -0.0013530255
+   -0.0007035690     0.0003338570     0.0005489081
+   -0.0026602451    -0.0015270983     0.0007767575
+   -0.0002060952     0.0000431951    -0.0001026069
+    0.0011716938     0.0018717842     0.0004987029
+   -0.0007696500    -0.0008115787    -0.0007340592
+    0.0000916763    -0.0000207657     0.0000169948
+   -0.0001218364     0.0000756182    -0.0000417454
+   -0.0008681144     0.0009118262     0.0019681945
+    0.0011227660     0.0018297968    -0.0020224529
+    0.0004082456    -0.0004164114    -0.0000258282
+    0.0003189875     0.0000584756     0.0000980456
+    0.0000336503    -0.0001521684    -0.0000954453
+    0.0002664063    -0.0005717101    -0.0000725580
+---------------------------------------------------
+Net gradient:  5.091625e-10  4.919918e-09 -7.628682e-09
+Net torque:    3.507887e-05  2.251428e-05  2.321141e-05
+
+ Energy calculation finished, energy: -1.643407698E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle   22
+    Energy  3.2697E-05 Target: 1.0000E-06 converged?   no
+  Max step  2.6411E-02 Target: 1.8000E-03 converged?   no
+  RMS step  6.0286E-03 Target: 1.2000E-03 converged?   no
+  Max grad  2.2108E-03 Target: 4.5000E-04 converged?   no
+  RMS grad  4.3310E-04 Target: 3.0000E-04 converged?   no
+ Predicted step length 6.7221E-02
+ Trust radius          5.0000E-01
+RMSD coordinate change for step 22 is  5.141e-03
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 0 matrix multiplies
+   1     0.2677306032   -1633.8620432142   -1633.8620432142     0.41  
+   2     0.1047561921      -8.5054215743   -1642.3674647885     0.48  
+   3     0.0330524089      -0.9068998546   -1643.2743646431     0.42  
+   4     0.0185010543      -0.1142815849   -1643.3886462280     0.35  
+   5     0.0029301200      -0.0173850328   -1643.4060312608     0.31  
+   6     0.0016413811      -0.0014544579   -1643.4074857187     0.28  
+   7     0.0003375031      -0.0002051108   -1643.4076908296     0.27  
+   8     0.0001452027      -0.0000368130   -1643.4077276426     0.25  
+   9     0.0000642274      -0.0000037542   -1643.4077313968     0.49  
+  10     0.0000253332      -0.0000010535   -1643.4077324503     0.21  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4077324503 a.u.
+HOMO-LUMO GAP: 8.804 eV
+CENTER OF MASS: {27.543431, 38.005041, 15.721248} ANGS
+DIPOLE MOMENT: {7.081293, -0.976261, -3.322517} (|D| = 7.882697) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0032920424     0.0011471089     0.0006033084
+    0.0041056294    -0.0005791062    -0.0017956043
+   -0.0020911987     0.0012113149    -0.0005743642
+   -0.0001027759     0.0025668627    -0.0008824835
+   -0.0001408374    -0.0001666377     0.0002130034
+    0.0021880518    -0.0021003608     0.0008986390
+   -0.0013878182    -0.0003426169     0.0005450395
+    0.0001975605     0.0012604700     0.0001897585
+    0.0014648282    -0.0017527737     0.0000172937
+   -0.0004348838     0.0005749215     0.0004131188
+    0.0001745614    -0.0001363620     0.0004482157
+   -0.0015296871    -0.0017330645     0.0003317752
+   -0.0002127276     0.0009979130    -0.0009538807
+   -0.0001718398     0.0002627422    -0.0000386495
+    0.0008309085    -0.0011312327     0.0003312061
+   -0.0001718599     0.0001155692     0.0001428450
+   -0.0010141989     0.0003906120     0.0002655711
+   -0.0003756149    -0.0007491612     0.0001944228
+   -0.0005707705    -0.0004742682     0.0015123380
+    0.0006806134    -0.0018508252     0.0002954812
+    0.0005232963    -0.0008873839    -0.0006015499
+   -0.0000383350     0.0003674247    -0.0000904692
+   -0.0013757446     0.0017852221     0.0004756674
+   -0.0000052763     0.0001175287     0.0000199241
+   -0.0001095139     0.0009191937     0.0001298302
+   -0.0005052802     0.0017375293     0.0003291650
+    0.0005445533     0.0006322751    -0.0003902284
+   -0.0001525272     0.0003618681    -0.0001375721
+   -0.0004442091    -0.0001852776     0.0004041479
+    0.0005206338    -0.0021121485     0.0001419567
+   -0.0002111757    -0.0032852752    -0.0015695853
+    0.0001232979     0.0003148949    -0.0001935234
+   -0.0003322508     0.0010154949     0.0002395485
+   -0.0011639808    -0.0005246917     0.0008903483
+    0.0009127557    -0.0003337639    -0.0012796301
+   -0.0003864335    -0.0001167075     0.0000858480
+    0.0038815069    -0.0026747031    -0.0005819738
+   -0.0027674406    -0.0047630424    -0.0007502822
+    0.0003757258     0.0001308060    -0.0000106600
+    0.0054590570     0.0058446952     0.0033037398
+    0.0006207373     0.0004496234    -0.0018888540
+   -0.0036354355     0.0065524916     0.0000779510
+   -0.0000609566    -0.0004292972    -0.0002976900
+   -0.0003209888    -0.0022066148    -0.0006582121
+    0.0007764786    -0.0003719983    -0.0000694950
+   -0.0027003082    -0.0016091015     0.0006232412
+   -0.0002540821     0.0001353731    -0.0001208016
+    0.0003004715     0.0001566007    -0.0013187066
+    0.0000741237     0.0009527254     0.0011162169
+    0.0001121107     0.0000342609     0.0000392088
+    0.0000671838    -0.0001699775     0.0000952300
+   -0.0008910179     0.0008919527     0.0015914040
+    0.0021029539     0.0013980223    -0.0016090036
+   -0.0002290208     0.0000270660     0.0000377273
+    0.0000560365    -0.0001029629    -0.0002958770
+   -0.0000519307     0.0000040680     0.0001543093
+    0.0010390848    -0.0015672722    -0.0000483834
+---------------------------------------------------
+Net gradient: -2.635180e-09  4.061214e-09  8.314151e-10
+Net torque:    3.626612e-05  2.186884e-05  2.365595e-05
+
+ Energy calculation finished, energy: -1.643407732E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle   23
+    Energy  3.4370E-05 Target: 1.0000E-06 converged?   no
+  Max step  3.1579E-02 Target: 1.8000E-03 converged?   no
+  RMS step  8.4690E-03 Target: 1.2000E-03 converged?   no
+  Max grad  1.8889E-03 Target: 4.5000E-04 converged?   no
+  RMS grad  4.4601E-04 Target: 3.0000E-04 converged?   no
+ Predicted step length 3.6358E-02
+ Trust radius          5.0000E-01
+RMSD coordinate change for step 23 is  2.780e-03
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Density matrix is not well-conditioned, rescale and purify
+Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 21 matrix multiplies
+   1     0.2667295633   -1633.6584584116   -1633.6584584116     0.44  
+   2     0.1034038921      -8.7256379860   -1642.3840963976     0.48  
+   3     0.0331774882      -0.8909248133   -1643.2750212108     0.42  
+   4     0.0182919919      -0.1138543170   -1643.3888755278     0.36  
+   5     0.0028225284      -0.0171824681   -1643.4060579960     0.31  
+   6     0.0016327485      -0.0014451577   -1643.4075031536     0.28  
+   7     0.0003393433      -0.0002037832   -1643.4077069369     0.28  
+   8     0.0001452103      -0.0000364298   -1643.4077433667     0.24  
+   9     0.0000639087      -0.0000036913   -1643.4077470580     0.49  
+  10     0.0000245548      -0.0000010474   -1643.4077481054     0.21  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4077481054 a.u.
+HOMO-LUMO GAP: 8.804 eV
+CENTER OF MASS: {27.543469, 38.005036, 15.721247} ANGS
+DIPOLE MOMENT: {7.095464, -0.968053, -3.324585} (|D| = 7.895290) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0014880790    -0.0010721729     0.0006989853
+    0.0041095024    -0.0005763449    -0.0018165360
+   -0.0021098891     0.0011456911    -0.0006157023
+   -0.0003162607     0.0023500245    -0.0005253174
+    0.0000755448     0.0000105473    -0.0001063335
+    0.0022265082    -0.0020817580     0.0008522300
+   -0.0014170828    -0.0003308154     0.0005289647
+    0.0001871331     0.0011902266     0.0002306038
+    0.0014873870    -0.0017311927     0.0000237270
+   -0.0004256188    -0.0000932552     0.0009052641
+    0.0001409039     0.0006171888    -0.0000735221
+   -0.0013975619    -0.0016239961     0.0002573867
+   -0.0003368538     0.0008422739    -0.0006089853
+   -0.0001684318     0.0002587924    -0.0002348279
+    0.0007780790    -0.0009813512     0.0003434320
+   -0.0001019235     0.0000376292     0.0000683441
+   -0.0010317603     0.0003695409     0.0002520179
+   -0.0003765009    -0.0008223674     0.0002887094
+   -0.0005600034    -0.0004660168     0.0015264430
+    0.0007218305    -0.0019131544     0.0003615380
+    0.0005036763    -0.0004730633    -0.0008527571
+   -0.0001148279     0.0000183191     0.0000768335
+   -0.0014053812     0.0020091104     0.0003085814
+    0.0000456716     0.0000151481     0.0000620778
+    0.0000574642     0.0007726664     0.0002960988
+   -0.0006704022     0.0017871754    -0.0000234135
+    0.0003372882     0.0010672611    -0.0005685315
+   -0.0000559978     0.0000040659    -0.0000391524
+   -0.0003834154    -0.0002180857     0.0004839757
+    0.0005579673    -0.0021832301     0.0002260052
+   -0.0001143155    -0.0028887382    -0.0018306946
+   -0.0000617488    -0.0000202197    -0.0000073106
+   -0.0002631319     0.0010458178     0.0002075831
+   -0.0010803790    -0.0005872662     0.0009085292
+    0.0006672943    -0.0003783618    -0.0010744053
+   -0.0001075682    -0.0001049703    -0.0001221732
+    0.0038440320    -0.0026157033    -0.0006035474
+   -0.0027828267    -0.0050390375    -0.0005468038
+    0.0003150829     0.0002276992    -0.0000251805
+    0.0064097512     0.0064658429     0.0012701288
+   -0.0001549642    -0.0001144918     0.0001264820
+   -0.0038567543     0.0063557725     0.0001247810
+    0.0001783888    -0.0002469395    -0.0003041196
+    0.0002426775    -0.0027378863    -0.0009681377
+    0.0000892717     0.0002229150     0.0001836632
+   -0.0028096851    -0.0016021413     0.0004932064
+   -0.0001952761     0.0001163607    -0.0000701998
+    0.0009608593     0.0020458345     0.0005419184
+   -0.0005401052    -0.0008550085    -0.0007301790
+    0.0000714592     0.0000189731     0.0000411345
+    0.0001585346    -0.0001459342     0.0003400736
+   -0.0010330593     0.0009195710     0.0013160550
+    0.0026468590     0.0011787155    -0.0012085596
+   -0.0004543319     0.0002951665    -0.0000533055
+   -0.0001453577    -0.0001117000    -0.0004025610
+   -0.0000495456    -0.0000432234     0.0001930401
+   -0.0008041285     0.0006701007    -0.0001255562
+---------------------------------------------------
+Net gradient: -1.247419e-09  4.380938e-09  1.079226e-09
+Net torque:    3.536046e-05  2.266856e-05  2.251221e-05
+
+ Energy calculation finished, energy: -1.643407748E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle   24
+    Energy  1.5655E-05 Target: 1.0000E-06 converged?   no
+  Max step  1.4171E-02 Target: 1.8000E-03 converged?   no
+  RMS step  4.5807E-03 Target: 1.2000E-03 converged?   no
+  Max grad  8.5501E-04 Target: 4.5000E-04 converged?   no
+  RMS grad  2.6935E-04 Target: 3.0000E-04 converged?  yes
+ Predicted step length 7.9422E-03
+ Trust radius          5.0000E-01
+RMSD coordinate change for step 24 is  6.074e-04
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Density matrix is not well-conditioned, rescale and purify
+Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 21 matrix multiplies
+   1     0.2674851469   -1633.6580732459   -1633.6580732459     0.43  
+   2     0.1033767200      -8.7261241062   -1642.3841973521     0.48  
+   3     0.0331627221      -0.8908393877   -1643.2750367398     0.42  
+   4     0.0182876728      -0.1138473394   -1643.3888840793     0.35  
+   5     0.0028223773      -0.0171807708   -1643.4060648501     0.31  
+   6     0.0016313230      -0.0014448997   -1643.4075097498     0.28  
+   7     0.0003391991      -0.0002037651   -1643.4077135148     0.25  
+   8     0.0001449140      -0.0000364347   -1643.4077499495     0.24  
+   9     0.0000638784      -0.0000040930   -1643.4077540425     0.49  
+  10     0.0000245831      -0.0000010442   -1643.4077550867     0.21  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4077550867 a.u.
+HOMO-LUMO GAP: 8.804 eV
+CENTER OF MASS: {27.543473, 38.005040, 15.721244} ANGS
+DIPOLE MOMENT: {7.097139, -0.965576, -3.324968} (|D| = 7.896653) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0019212949    -0.0005428958     0.0006796414
+    0.0041035501    -0.0005689606    -0.0018139978
+   -0.0021149924     0.0011385591    -0.0005929846
+   -0.0003237505     0.0023862479    -0.0005472880
+    0.0000811077    -0.0000143576    -0.0000876177
+    0.0022267565    -0.0020802149     0.0008473584
+   -0.0014115371    -0.0003287410     0.0005289412
+    0.0001933462     0.0012045448     0.0002212909
+    0.0014804580    -0.0017340790     0.0000224803
+   -0.0004453914     0.0004091434     0.0006182866
+    0.0001528301     0.0000873943     0.0002338018
+   -0.0013852635    -0.0016041635     0.0002426233
+   -0.0005273168     0.0011690519    -0.0009825582
+    0.0000135379    -0.0000365618     0.0001182560
+    0.0007295126    -0.0009426137     0.0003805527
+   -0.0000499772     0.0000110393     0.0000109399
+   -0.0010321467     0.0003477168     0.0002688150
+   -0.0004093423    -0.0008275414     0.0002704875
+   -0.0005667928    -0.0004679156     0.0015265153
+    0.0007101528    -0.0018943786     0.0003378583
+    0.0004645438    -0.0004908864    -0.0007336157
+   -0.0000782493     0.0000235012    -0.0000131613
+   -0.0013470734     0.0020123563     0.0003803769
+    0.0000301465    -0.0000025809     0.0000072535
+    0.0000425453     0.0007997576     0.0002384165
+   -0.0006574759     0.0017199298     0.0001256734
+    0.0003638948     0.0010749441    -0.0004949493
+   -0.0000750349    -0.0000087608    -0.0000867738
+   -0.0004017312    -0.0002086536     0.0004613718
+    0.0005367176    -0.0021779570     0.0002108662
+   -0.0001023349    -0.0028910017    -0.0017725200
+   -0.0000753732    -0.0000260128    -0.0000405602
+   -0.0002075468     0.0010573224     0.0002143364
+   -0.0010494994    -0.0006013085     0.0008614039
+    0.0005934416    -0.0004341747    -0.0011102392
+   -0.0000369695    -0.0000447381    -0.0000930608
+    0.0038395370    -0.0026064161    -0.0005231557
+   -0.0026964534    -0.0049726102    -0.0005184631
+    0.0001952387     0.0001620613    -0.0000281358
+    0.0062733044     0.0063755014     0.0016386877
+    0.0000207993    -0.0000400606    -0.0002341821
+   -0.0039351678     0.0062978021    -0.0000189441
+    0.0001928626    -0.0001411980    -0.0001665895
+   -0.0000270618    -0.0025860444    -0.0009532757
+    0.0003399605     0.0000446952     0.0000590574
+   -0.0029035576    -0.0016372192     0.0005340784
+   -0.0000915499     0.0000876061    -0.0000382513
+    0.0007194099     0.0013765623    -0.0002614284
+   -0.0002405308    -0.0001342440     0.0000548215
+    0.0000316987     0.0000087886     0.0000374193
+    0.0001719076    -0.0001109842     0.0002269267
+   -0.0010431151     0.0009008539     0.0014013534
+    0.0024973813     0.0012213267    -0.0013854336
+   -0.0002547116     0.0002141662    -0.0000214598
+   -0.0001585364    -0.0000597463    -0.0002336394
+   -0.0000714335    -0.0000310421     0.0000921042
+   -0.0003634329     0.0001171928    -0.0000997121
+---------------------------------------------------
+Net gradient: -3.402099e-09  2.349705e-09 -1.098093e-09
+Net torque:    3.504797e-05  2.310191e-05  2.239560e-05
+
+ Energy calculation finished, energy: -1.643407755E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle   25
+    Energy  6.9813E-06 Target: 1.0000E-06 converged?   no
+  Max step  2.5535E-03 Target: 1.8000E-03 converged?   no
+  RMS step  1.0006E-03 Target: 1.2000E-03 converged?  yes
+  Max grad  3.6343E-04 Target: 4.5000E-04 converged?  yes
+  RMS grad  1.2876E-04 Target: 3.0000E-04 converged?  yes
+ Predicted step length 7.1807E-03
+ Trust radius          5.0000E-01
+RMSD coordinate change for step 25 is  5.491e-04
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Density matrix is not well-conditioned, rescale and purify
+Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 21 matrix multiplies
+   1     0.2680180604   -1633.6579415552   -1633.6579415552     0.43  
+   2     0.1033069291      -8.7262823337   -1642.3842238890     0.47  
+   3     0.0331188928      -0.8908167047   -1643.2750405937     0.42  
+   4     0.0182738372      -0.1138477364   -1643.3888883301     0.36  
+   5     0.0028256707      -0.0171808518   -1643.4060691819     0.40  
+   6     0.0016299204      -0.0014449395   -1643.4075141213     0.36  
+   7     0.0003394042      -0.0002037567   -1643.4077178780     0.33  
+   8     0.0001447691      -0.0000364349   -1643.4077543129     0.31  
+   9     0.0000638622      -0.0000039761   -1643.4077582890     0.57  
+  10     0.0000245781      -0.0000010614   -1643.4077593504     0.28  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4077593504 a.u.
+HOMO-LUMO GAP: 8.804 eV
+CENTER OF MASS: {27.543476, 38.005043, 15.721242} ANGS
+DIPOLE MOMENT: {7.098920, -0.964133, -3.327119} (|D| = 7.898983) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0022082164    -0.0002236184     0.0006820817
+    0.0041187076    -0.0005814394    -0.0018229264
+   -0.0021238529     0.0011293991    -0.0005974495
+   -0.0002786400     0.0024226629    -0.0006288091
+    0.0000266746    -0.0000366217    -0.0000224519
+    0.0022141416    -0.0020882700     0.0008685046
+   -0.0014113719    -0.0003338844     0.0005340943
+    0.0001926244     0.0012011271     0.0002240018
+    0.0014840214    -0.0017330816     0.0000251375
+   -0.0004439381     0.0004316115     0.0006265426
+    0.0001474651     0.0000719678     0.0002241137
+   -0.0013633900    -0.0015918676     0.0002381059
+   -0.0006069383     0.0012608352    -0.0010625998
+    0.0000742647    -0.0001281272     0.0002055966
+    0.0007008332    -0.0009261595     0.0004016515
+   -0.0000170469     0.0000046336    -0.0000185094
+   -0.0010308596     0.0003316499     0.0002808404
+   -0.0004247733    -0.0008278298     0.0002640086
+   -0.0005700282    -0.0004701197     0.0015281614
+    0.0007022204    -0.0018819906     0.0003183559
+    0.0003970611    -0.0004956340    -0.0007031737
+   -0.0000138585     0.0000338026    -0.0000407873
+   -0.0013021845     0.0019993981     0.0004192483
+    0.0000081905     0.0000006399    -0.0000156061
+    0.0000338140     0.0008080167     0.0002294874
+   -0.0005879563     0.0016623538     0.0002365862
+    0.0003367917     0.0010587466    -0.0005301908
+   -0.0000469405     0.0000082549    -0.0000590466
+   -0.0004071547    -0.0001979469     0.0004461919
+    0.0005360226    -0.0021744844     0.0002104000
+   -0.0001617669    -0.0029046659    -0.0017832169
+   -0.0000237587    -0.0000056269    -0.0000275677
+   -0.0001791975     0.0010541249     0.0002480478
+   -0.0010207966    -0.0006207809     0.0008382575
+    0.0005667286    -0.0004801220    -0.0011612419
+   -0.0000140255     0.0000070399    -0.0000443782
+    0.0038397688    -0.0026050795    -0.0004561236
+   -0.0026020236    -0.0048788785    -0.0005449291
+    0.0000503931     0.0000978673    -0.0000130719
+    0.0063639986     0.0063811107     0.0015485124
+   -0.0000245398    -0.0000830207    -0.0001066866
+   -0.0040084654     0.0062573535    -0.0001776572
+    0.0001646791    -0.0000268285    -0.0000174816
+    0.0000767343    -0.0026116714    -0.0010186697
+    0.0002525509     0.0000110867    -0.0000030144
+   -0.0029745955    -0.0016275712     0.0006063751
+    0.0000009571     0.0000522248    -0.0000017686
+    0.0006141863     0.0010060593    -0.0006912212
+   -0.0000798972     0.0002603388     0.0004378480
+    0.0000040101     0.0000065237     0.0000122711
+    0.0001239123    -0.0000816041     0.0001473108
+   -0.0010596262     0.0008752250     0.0014564697
+    0.0023572128     0.0012249036    -0.0015219701
+   -0.0000949963     0.0001632724     0.0000118042
+   -0.0001465393    -0.0000031566    -0.0001071919
+   -0.0000893620    -0.0000079052     0.0000117219
+   -0.0000712234    -0.0001942454    -0.0001039910
+---------------------------------------------------
+Net gradient:  8.950256e-10 -1.854604e-09 -3.420064e-09
+Net torque:    3.488730e-05  2.318940e-05  2.170720e-05
+
+ Energy calculation finished, energy: -1.643407759E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle   26
+    Energy  4.2637E-06 Target: 1.0000E-06 converged?   no
+  Max step  2.3699E-03 Target: 1.8000E-03 converged?   no
+  RMS step  9.0468E-04 Target: 1.2000E-03 converged?  yes
+  Max grad  4.3785E-04 Target: 4.5000E-04 converged?  yes
+  RMS grad  1.0717E-04 Target: 3.0000E-04 converged?  yes
+ Predicted step length 2.2709E-02
+ Trust radius          5.0000E-01
+RMSD coordinate change for step 26 is  1.737e-03
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 0 matrix multiplies
+   1     0.2690682244   -1633.8619832806   -1633.8619832806     0.49  
+   2     0.1040706993      -8.5054683386   -1642.3674516192     0.56  
+   3     0.0332524838      -0.9069835893   -1643.2744352085     0.50  
+   4     0.0183861309      -0.1142377152   -1643.3886729237     0.44  
+   5     0.0027506460      -0.0173885512   -1643.4060614749     0.39  
+   6     0.0016331063      -0.0014551366   -1643.4075166115     0.36  
+   7     0.0003397478      -0.0002051522   -1643.4077217637     0.33  
+   8     0.0001446946      -0.0000368322   -1643.4077585959     0.31  
+   9     0.0000647109      -0.0000035403   -1643.4077621362     0.57  
+  10     0.0000251837      -0.0000010491   -1643.4077631853     0.28  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4077631853 a.u.
+HOMO-LUMO GAP: 8.804 eV
+CENTER OF MASS: {27.543494, 38.005058, 15.721235} ANGS
+DIPOLE MOMENT: {7.108938, -0.946745, -3.328545} (|D| = 7.906487) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0022412547    -0.0002348083     0.0007071467
+    0.0041496771    -0.0006039642    -0.0018432412
+   -0.0021375726     0.0010981888    -0.0006125279
+   -0.0002515302     0.0024045946    -0.0006621904
+   -0.0000159914    -0.0000003412    -0.0000078985
+    0.0021979921    -0.0021037226     0.0008996674
+   -0.0014151302    -0.0003405909     0.0005380556
+    0.0001875512     0.0011932367     0.0002321058
+    0.0014925098    -0.0017292995     0.0000320408
+   -0.0004312346     0.0006253526     0.0005707033
+    0.0001258160    -0.0001059110     0.0002766591
+   -0.0013106771    -0.0015280659     0.0002011087
+   -0.0006644106     0.0012288657    -0.0009698747
+    0.0000880709    -0.0001546337     0.0001748985
+    0.0006757052    -0.0008801086     0.0004003299
+    0.0000226247    -0.0000096259    -0.0000336433
+   -0.0010321063     0.0003044365     0.0002945076
+   -0.0004367867    -0.0008320142     0.0002660983
+   -0.0005727085    -0.0004720235     0.0015330354
+    0.0006930838    -0.0018742537     0.0003016589
+    0.0003410429    -0.0004392504    -0.0007321071
+    0.0000292431    -0.0000036164    -0.0000246178
+   -0.0012722541     0.0020056841     0.0004585800
+    0.0000003938    -0.0000063300    -0.0000454292
+    0.0000390634     0.0008016241     0.0002494667
+   -0.0005228098     0.0016135259     0.0003724640
+    0.0002744142     0.0011151951    -0.0006080969
+    0.0000022474    -0.0000417324    -0.0000103666
+   -0.0004133830    -0.0001901830     0.0004386950
+    0.0005472389    -0.0021749529     0.0002232195
+   -0.0001909318    -0.0028636145    -0.0018537286
+   -0.0000109049    -0.0000320939     0.0000299103
+   -0.0001401004     0.0010436924     0.0002804564
+   -0.0009893291    -0.0006549545     0.0008224411
+    0.0005161564    -0.0005372268    -0.0012054491
+    0.0000457469     0.0000346944    -0.0000299226
+    0.0038760143    -0.0026192498    -0.0003781018
+   -0.0025508220    -0.0048267918    -0.0006164584
+   -0.0000996767     0.0000048455     0.0000215890
+    0.0062833625     0.0062837356     0.0020719032
+    0.0001796575     0.0000660447    -0.0005618363
+   -0.0041080965     0.0062482871    -0.0002958070
+    0.0000792725     0.0001283991     0.0000843315
+    0.0000738043    -0.0026098804    -0.0009936719
+    0.0002800396    -0.0000731399    -0.0001569994
+   -0.0030361598    -0.0015868213     0.0007046769
+    0.0000748714    -0.0000121673     0.0000457155
+    0.0006865258     0.0010865793    -0.0006258710
+   -0.0000911028     0.0001963450     0.0002998103
+   -0.0000359625     0.0000109646    -0.0000127568
+    0.0000798477    -0.0000601265     0.0000427727
+   -0.0010826600     0.0008719723     0.0015136904
+    0.0020939248     0.0012790442    -0.0016273906
+    0.0000917217     0.0000873286    -0.0000029397
+   -0.0000874216     0.0000733526     0.0000184356
+   -0.0000490630    -0.0000440265    -0.0000615123
+   -0.0000375384    -0.0001604641    -0.0001337378
+---------------------------------------------------
+Net gradient:  4.439691e-10  3.705879e-09 -2.763296e-09
+Net torque:    3.587446e-05  2.202969e-05  2.305253e-05
+
+ Energy calculation finished, energy: -1.643407763E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle   27
+    Energy  3.8349E-06 Target: 1.0000E-06 converged?   no
+  Max step  1.2215E-02 Target: 1.8000E-03 converged?   no
+  RMS step  2.8611E-03 Target: 1.2000E-03 converged?   no
+  Max grad  5.6184E-04 Target: 4.5000E-04 converged?   no
+  RMS grad  1.2092E-04 Target: 3.0000E-04 converged?  yes
+ Predicted step length 1.3319E-02
+ Trust radius          5.0000E-01
+RMSD coordinate change for step 27 is  1.019e-03
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Density matrix is not well-conditioned, rescale and purify
+Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 21 matrix multiplies
+   1     0.2684463946   -1633.6588558669   -1633.6588558669     0.54  
+   2     0.1029444987      -8.7252496955   -1642.3841055623     0.48  
+   3     0.0330605514      -0.8909243390   -1643.2750299013     0.42  
+   4     0.0182101221      -0.1138613966   -1643.3888912979     0.35  
+   5     0.0027956553      -0.0171847336   -1643.4060760315     0.33  
+   6     0.0016252024      -0.0014452576   -1643.4075212891     0.28  
+   7     0.0003414834      -0.0002037784   -1643.4077250675     0.26  
+   8     0.0001444293      -0.0000364404   -1643.4077615079     0.24  
+   9     0.0000641583      -0.0000035346   -1643.4077650425     0.49  
+  10     0.0000247544      -0.0000010562   -1643.4077660987     0.21  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4077660987 a.u.
+HOMO-LUMO GAP: 8.804 eV
+CENTER OF MASS: {27.543494, 38.005049, 15.721239} ANGS
+DIPOLE MOMENT: {7.110733, -0.952072, -3.330136} (|D| = 7.909410) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0025165470     0.0000418089     0.0007002149
+    0.0041605840    -0.0006293231    -0.0018642580
+   -0.0021644993     0.0010745492    -0.0006766449
+   -0.0002523206     0.0022968319    -0.0006770350
+   -0.0000459107     0.0001079060    -0.0000514492
+    0.0021900097    -0.0021123332     0.0009524243
+   -0.0014193502    -0.0003507230     0.0005462977
+    0.0001709143     0.0011714991     0.0002486691
+    0.0015181332    -0.0017191884     0.0000511829
+   -0.0003591634     0.0003363249     0.0008317008
+    0.0000664373     0.0002394701    -0.0000251271
+   -0.0012849302    -0.0015443642     0.0002420157
+   -0.0006108002     0.0011327069    -0.0008157846
+    0.0000199857    -0.0000786940     0.0000593155
+    0.0006963458    -0.0008871048     0.0003729981
+    0.0000129060     0.0000057728     0.0000070355
+   -0.0010286158     0.0003091239     0.0002975239
+   -0.0004143190    -0.0008263033     0.0002820970
+   -0.0005646530    -0.0004750278     0.0015381198
+    0.0006890933    -0.0018729893     0.0002891507
+    0.0004469061    -0.0003094086    -0.0009033682
+   -0.0000925239    -0.0001150262     0.0001097500
+   -0.0012310713     0.0019728326     0.0003801431
+   -0.0000499576     0.0000349331     0.0000383867
+    0.0000464681     0.0007800145     0.0003011622
+   -0.0003498402     0.0015363322     0.0003814759
+    0.0001883323     0.0010834856    -0.0007739310
+    0.0000809234     0.0000001044     0.0001093652
+   -0.0004071110    -0.0001804676     0.0004402452
+    0.0005752785    -0.0021799726     0.0002442639
+   -0.0002633493    -0.0028643987    -0.0019369121
+    0.0000492965    -0.0000141677     0.0000908079
+   -0.0001852537     0.0010447825     0.0003252953
+   -0.0009831510    -0.0006653840     0.0008479384
+    0.0005819489    -0.0005326584    -0.0012720234
+   -0.0000282467     0.0000434006     0.0000422221
+    0.0038887190    -0.0026377368    -0.0003579221
+   -0.0025567134    -0.0046875948    -0.0007044141
+   -0.0001361297    -0.0000468972     0.0000185185
+    0.0066087002     0.0064366052     0.0013334088
+   -0.0001611066    -0.0001311056     0.0001948713
+   -0.0040773219     0.0063292728    -0.0003674985
+   -0.0000502274     0.0000960730     0.0001364331
+    0.0009653491    -0.0030060827    -0.0011828170
+   -0.0005114323     0.0002333327     0.0000096494
+   -0.0029956147    -0.0015234271     0.0007963120
+    0.0000628087    -0.0000358912     0.0000399886
+    0.0006745893     0.0009982795    -0.0006268003
+   -0.0000711186     0.0002444493     0.0002635046
+   -0.0000095674     0.0000043231    -0.0000551831
+   -0.0000812548     0.0000016595     0.0000600372
+   -0.0010460974     0.0008719497     0.0015713358
+    0.0018898191     0.0013368311    -0.0017071744
+    0.0001278479     0.0000021697    -0.0000002658
+    0.0000281726     0.0000741485     0.0000159253
+   -0.0000477750    -0.0000140037    -0.0000580988
+    0.0002564051    -0.0004006904    -0.0001130782
+---------------------------------------------------
+Net gradient:  1.177170e-09  8.894791e-09  3.092420e-10
+Net torque:    3.482575e-05  2.259839e-05  2.274334e-05
+
+ Energy calculation finished, energy: -1.643407766E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle   28
+    Energy  2.9134E-06 Target: 1.0000E-06 converged?   no
+  Max step  5.6722E-03 Target: 1.8000E-03 converged?   no
+  RMS step  1.6781E-03 Target: 1.2000E-03 converged?   no
+  Max grad  5.1143E-04 Target: 4.5000E-04 converged?   no
+  RMS grad  1.2805E-04 Target: 3.0000E-04 converged?  yes
+ Predicted step length 9.7560E-03
+ Trust radius          5.0000E-01
+RMSD coordinate change for step 28 is  7.461e-04
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 0 matrix multiplies
+   1     0.2692038131   -1633.8620880850   -1633.8620880850     0.41  
+   2     0.1038514812      -8.5051859512   -1642.3672740362     0.47  
+   3     0.0331696582      -0.9071349784   -1643.2744090147     0.42  
+   4     0.0183511026      -0.1142624030   -1643.3886714177     0.35  
+   5     0.0027604494      -0.0173940290   -1643.4060654467     0.31  
+   6     0.0016309037      -0.0014561258   -1643.4075215725     0.28  
+   7     0.0003414563      -0.0002052903   -1643.4077268628     0.25  
+   8     0.0001445155      -0.0000368569   -1643.4077637197     0.24  
+   9     0.0000649520      -0.0000031951   -1643.4077669148     0.49  
+  10     0.0000251663      -0.0000010680   -1643.4077679829     0.21  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4077679829 a.u.
+HOMO-LUMO GAP: 8.804 eV
+CENTER OF MASS: {27.543503, 38.005056, 15.721235} ANGS
+DIPOLE MOMENT: {7.115856, -0.943167, -3.329417} (|D| = 7.912648) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0023014112    -0.0002134861     0.0007017674
+    0.0041576039    -0.0006301690    -0.0018675689
+   -0.0021672122     0.0010599011    -0.0006841062
+   -0.0002514823     0.0023503933    -0.0007266748
+   -0.0000539928     0.0000381427     0.0000046193
+    0.0021998544    -0.0021046759     0.0009443760
+   -0.0014231476    -0.0003451807     0.0005442296
+    0.0001676165     0.0011669900     0.0002537668
+    0.0015219216    -0.0017169244     0.0000538584
+   -0.0003479148     0.0003821256     0.0008247276
+    0.0000558442     0.0002012954    -0.0000233376
+   -0.0012690569    -0.0015187623     0.0002279237
+   -0.0005587435     0.0009846160    -0.0006283673
+   -0.0000464536     0.0000377470    -0.0001030347
+    0.0007076611    -0.0008708752     0.0003657222
+    0.0000093892     0.0000044536     0.0000101992
+   -0.0010285571     0.0003073968     0.0002973126
+   -0.0004144393    -0.0008321761     0.0002861144
+   -0.0005646567    -0.0004736471     0.0015413778
+    0.0006869955    -0.0018748004     0.0002918573
+    0.0003370776    -0.0003727339    -0.0008633987
+    0.0000244092    -0.0000438396     0.0000696433
+   -0.0012750255     0.0020011750     0.0004004633
+   -0.0000110638     0.0000101197     0.0000123349
+    0.0000510550     0.0007773520     0.0003034217
+   -0.0004039086     0.0015610453     0.0004238291
+    0.0001897547     0.0011176916    -0.0007615806
+    0.0000744642    -0.0000321808     0.0000995071
+   -0.0004123835    -0.0001845163     0.0004445847
+    0.0005753722    -0.0021832564     0.0002479632
+   -0.0002549600    -0.0028638028    -0.0019261421
+    0.0000462778    -0.0000168738     0.0000788733
+   -0.0001808394     0.0010458415     0.0002943490
+   -0.0009916955    -0.0006661941     0.0008511066
+    0.0005706886    -0.0005247466    -0.0012581258
+   -0.0000094940     0.0000162397     0.0000128555
+    0.0039076913    -0.0026483116    -0.0003654711
+   -0.0026314887    -0.0047314734    -0.0007140005
+   -0.0000767847    -0.0000523456     0.0000167368
+    0.0065036153     0.0064097542     0.0016121266
+   -0.0000296640    -0.0000369700    -0.0000958562
+   -0.0040648698     0.0063780320    -0.0002945713
+   -0.0000803540     0.0000580825     0.0000582739
+    0.0006578794    -0.0028557449    -0.0010173097
+   -0.0001967309     0.0000873983    -0.0000990339
+   -0.0029706856    -0.0015221417     0.0007920257
+    0.0000256905    -0.0000331455     0.0000227768
+    0.0007454725     0.0012520568    -0.0003337086
+   -0.0001569480    -0.0000188052    -0.0000183633
+   -0.0000138025     0.0000083014    -0.0000301080
+   -0.0000266491    -0.0000207677     0.0000152924
+   -0.0010180394     0.0008909061     0.0015892648
+    0.0018459988     0.0014031128    -0.0017375568
+    0.0001053340    -0.0000278472    -0.0000167274
+    0.0000300184     0.0000460610     0.0000063287
+   -0.0000077617    -0.0000397629    -0.0000225116
+    0.0000425303    -0.0001400671    -0.0001120568
+---------------------------------------------------
+Net gradient: -4.947612e-10  7.276211e-09 -2.342749e-09
+Net torque:    3.576617e-05  2.182833e-05  2.362658e-05
+
+ Energy calculation finished, energy: -1.643407768E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle   29
+    Energy  1.8842E-06 Target: 1.0000E-06 converged?   no
+  Max step  5.7025E-03 Target: 1.8000E-03 converged?   no
+  RMS step  1.2291E-03 Target: 1.2000E-03 converged?   no
+  Max grad  2.0130E-04 Target: 4.5000E-04 converged?  yes
+  RMS grad  6.5173E-05 Target: 3.0000E-04 converged?  yes
+ Predicted step length 6.6502E-03
+ Trust radius          5.0000E-01
+RMSD coordinate change for step 29 is  5.086e-04
+
+**** resetting density ****
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Density matrix is not well-conditioned, rescale and purify
+Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 21 matrix multiplies
+   1     0.2688639092   -1633.6590528211   -1633.6590528211     0.43  
+   2     0.1028175198      -8.7249914954   -1642.3840443165     0.48  
+   3     0.0331466561      -0.8909860294   -1643.2750303459     0.42  
+   4     0.0181907710      -0.1138647105   -1643.3888950564     0.35  
+   5     0.0027667759      -0.0171843035   -1643.4060793599     0.31  
+   6     0.0016239307      -0.0014450090   -1643.4075243690     0.28  
+   7     0.0003422745      -0.0002037297   -1643.4077280986     0.26  
+   8     0.0001443753      -0.0000364400   -1643.4077645386     0.24  
+   9     0.0000644668      -0.0000029365   -1643.4077674752     0.49  
+  10     0.0000249243      -0.0000010145   -1643.4077684897     0.21  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4077684897 a.u.
+HOMO-LUMO GAP: 8.804 eV
+CENTER OF MASS: {27.543510, 38.005056, 15.721234} ANGS
+DIPOLE MOMENT: {7.119621, -0.939154, -3.327524} (|D| = 7.914760) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0021119001    -0.0004375160     0.0006932257
+    0.0041386967    -0.0006244616    -0.0018696257
+   -0.0021786474     0.0010442893    -0.0007030688
+   -0.0002958023     0.0023541721    -0.0007314140
+   -0.0000202187     0.0000043225     0.0000035052
+    0.0022208482    -0.0020864401     0.0009322218
+   -0.0014246710    -0.0003400292     0.0005428645
+    0.0001633495     0.0011659939     0.0002557121
+    0.0015289514    -0.0017128951     0.0000620519
+   -0.0003198705     0.0005783389     0.0007525258
+    0.0000325036     0.0000146406     0.0000397870
+   -0.0012565551    -0.0015173430     0.0002399217
+   -0.0005495277     0.0009602759    -0.0005878824
+   -0.0000612234     0.0000575984    -0.0001367248
+    0.0007168465    -0.0008506171     0.0003609319
+    0.0000072622    -0.0000037810     0.0000127073
+   -0.0010308072     0.0003085671     0.0002974566
+   -0.0004142811    -0.0008413125     0.0002917104
+   -0.0005598450    -0.0004723337     0.0015437589
+    0.0006863364    -0.0018756421     0.0002917008
+    0.0003007113    -0.0003862833    -0.0008406123
+    0.0000593080    -0.0000283379     0.0000488980
+   -0.0013045379     0.0020344828     0.0004006146
+    0.0000189547    -0.0000152540     0.0000023696
+    0.0000587017     0.0007757031     0.0002987256
+   -0.0004463838     0.0015603546     0.0004541082
+    0.0001978410     0.0011545268    -0.0007370751
+    0.0000632040    -0.0000638973     0.0000840638
+   -0.0004176571    -0.0001857800     0.0004484333
+    0.0005719787    -0.0021916408     0.0002496741
+   -0.0002265196    -0.0028515229    -0.0018999412
+    0.0000208441    -0.0000342796     0.0000571312
+   -0.0001808548     0.0010563285     0.0002557389
+   -0.0009998008    -0.0006615356     0.0008550157
+    0.0005544326    -0.0005102490    -0.0012431270
+    0.0000091096    -0.0000099100    -0.0000129894
+    0.0039230114    -0.0026533252    -0.0003799424
+   -0.0027161323    -0.0047671178    -0.0007061916
+    0.0000057204    -0.0000491158     0.0000064768
+    0.0064301394     0.0064082255     0.0017381500
+    0.0000444977     0.0000167809    -0.0002515791
+   -0.0040318001     0.0064190620    -0.0002070428
+   -0.0000974743    -0.0000040546    -0.0000369319
+    0.0005665776    -0.0028236683    -0.0009408752
+   -0.0001029052     0.0000715160    -0.0000956883
+   -0.0029375354    -0.0015318223     0.0007708612
+   -0.0000211112    -0.0000237849    -0.0000023187
+    0.0007628385     0.0014071274    -0.0001531830
+   -0.0001946390    -0.0001793266    -0.0001697150
+   -0.0000113549     0.0000059040    -0.0000015706
+    0.0000170188    -0.0000200258    -0.0000151400
+   -0.0009724565     0.0009035349     0.0016145917
+    0.0018208874     0.0014725830    -0.0017824697
+    0.0000434459    -0.0000588123    -0.0000301206
+    0.0000313370    -0.0000032033    -0.0000254725
+    0.0000309526    -0.0000438618     0.0000406438
+   -0.0001417956     0.0000848538    -0.0000848757
+---------------------------------------------------
+Net gradient: -1.108848e-09  9.849071e-10 -7.373110e-11
+Net torque:    3.503525e-05  2.264930e-05  2.245366e-05
+
+ Energy calculation finished, energy: -1.643407768E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle   30
+    Energy  5.0686E-07 Target: 1.0000E-06 converged?  yes
+  Max step  3.0407E-03 Target: 1.8000E-03 converged?   no
+  RMS step  8.3785E-04 Target: 1.2000E-03 converged?  yes
+  Max grad  2.5158E-04 Target: 4.5000E-04 converged?  yes
+  RMS grad  6.9992E-05 Target: 3.0000E-04 converged?  yes
+ Predicted step length 6.6793E-03
+ Trust radius          5.0000E-01
+RMSD coordinate change for step 30 is  5.108e-04
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 0 matrix multiplies
+   1     0.2697298060   -1633.8625537573   -1633.8625537573     0.41  
+   2     0.1037431729      -8.5047378300   -1642.3672915873     0.48  
+   3     0.0331326176      -0.9071180444   -1643.2744096317     0.42  
+   4     0.0183390075      -0.1142626025   -1643.3886722342     0.35  
+   5     0.0027828558      -0.0173951834   -1643.4060674176     0.31  
+   6     0.0016304453      -0.0014563758   -1643.4075237933     0.28  
+   7     0.0003426323      -0.0002052981   -1643.4077290914     0.26  
+   8     0.0001444844      -0.0000368648   -1643.4077659562     0.24  
+   9     0.0000651629      -0.0000032808   -1643.4077692370     0.52  
+  10     0.0000251190      -0.0000010445   -1643.4077702815     0.24  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4077702815 a.u.
+HOMO-LUMO GAP: 8.804 eV
+CENTER OF MASS: {27.543515, 38.005058, 15.721233} ANGS
+DIPOLE MOMENT: {7.123375, -0.936799, -3.326278} (|D| = 7.917335) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0020880098    -0.0004585253     0.0006698892
+    0.0041167461    -0.0006218603    -0.0018713543
+   -0.0021915251     0.0010252938    -0.0007235648
+   -0.0003486942     0.0023511394    -0.0007414143
+    0.0000136775    -0.0000210875    -0.0000006851
+    0.0022436649    -0.0020698189     0.0009262793
+   -0.0014266172    -0.0003300199     0.0005423086
+    0.0001569851     0.0011594752     0.0002633440
+    0.0015383433    -0.0017083647     0.0000699888
+   -0.0002861820     0.0005624149     0.0007989581
+    0.0000083084     0.0000470505    -0.0000236294
+   -0.0012455419    -0.0015231618     0.0002618852
+   -0.0005528806     0.0009663281    -0.0005797821
+   -0.0000621266     0.0000611023    -0.0001447500
+    0.0007237296    -0.0008374020     0.0003688539
+    0.0000063777    -0.0000072777     0.0000040873
+   -0.0010281112     0.0003089636     0.0002985652
+   -0.0004168876    -0.0008458134     0.0002905632
+   -0.0005609130    -0.0004735036     0.0015470065
+    0.0006792076    -0.0018705831     0.0002854831
+    0.0003103266    -0.0003956526    -0.0008101287
+    0.0000532595    -0.0000244235     0.0000262230
+   -0.0013000828     0.0020426695     0.0003903948
+    0.0000189595    -0.0000224034     0.0000137245
+    0.0000569933     0.0007838873     0.0002733423
+   -0.0004280435     0.0015162769     0.0004807501
+    0.0002180808     0.0011398985    -0.0007022437
+    0.0000476964    -0.0000501286     0.0000677790
+   -0.0004271057    -0.0001832403     0.0004418817
+    0.0005629168    -0.0021939565     0.0002453740
+   -0.0002113963    -0.0028669108    -0.0018504225
+    0.0000156140    -0.0000273569     0.0000185733
+   -0.0001913189     0.0010757948     0.0002351772
+   -0.0010065841    -0.0006570809     0.0008499390
+    0.0005562721    -0.0005057374    -0.0012576204
+    0.0000074678    -0.0000162964    -0.0000054662
+    0.0039278448    -0.0026583970    -0.0003857938
+   -0.0027748488    -0.0047919544    -0.0006765677
+    0.0000559455    -0.0000405868    -0.0000196737
+    0.0064193040     0.0064372414     0.0017086212
+    0.0000573718     0.0000191993    -0.0002525634
+   -0.0040295267     0.0064635038    -0.0001927613
+   -0.0000814392    -0.0000738060    -0.0000566001
+    0.0003889928    -0.0027380156    -0.0008585404
+    0.0000723087    -0.0000014616    -0.0001185493
+   -0.0029280254    -0.0015547145     0.0007556204
+   -0.0000390850    -0.0000042551    -0.0000275672
+    0.0007324816     0.0014374740    -0.0001142327
+   -0.0001761678    -0.0002081175    -0.0001814415
+    0.0000038783    -0.0000063270     0.0000098514
+    0.0000055493     0.0000173488    -0.0000261630
+   -0.0009223093     0.0008981832     0.0016537926
+    0.0018216714     0.0015005629    -0.0018747266
+    0.0000098002    -0.0000893916    -0.0000059952
+    0.0000242401    -0.0000440852    -0.0000290440
+    0.0000210462     0.0000018721     0.0000741088
+   -0.0001516423     0.0001060376    -0.0000410792
+---------------------------------------------------
+Net gradient: -3.063491e-09  6.385432e-11  5.047968e-09
+Net torque:    3.638005e-05  2.136674e-05  2.347987e-05
+
+ Energy calculation finished, energy: -1.643407770E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle   31
+    Energy  1.7918E-06 Target: 1.0000E-06 converged?   no
+  Max step  3.1744E-03 Target: 1.8000E-03 converged?   no
+  RMS step  8.4152E-04 Target: 1.2000E-03 converged?  yes
+  Max grad  2.5256E-04 Target: 4.5000E-04 converged?  yes
+  RMS grad  7.1231E-05 Target: 3.0000E-04 converged?  yes
+ Predicted step length 1.1069E-02
+ Trust radius          5.0000E-01
+RMSD coordinate change for step 31 is  8.465e-04
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Density matrix is not well-conditioned, rescale and purify
+Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 21 matrix multiplies
+   1     0.2698905090   -1633.6580892487   -1633.6580892487     0.45  
+   2     0.1026819864      -8.7260041852   -1642.3840934339     0.49  
+   3     0.0329930922      -0.8909436034   -1643.2750370373     0.44  
+   4     0.0181752814      -0.1138593864   -1643.3888964237     0.37  
+   5     0.0028312258      -0.0171837119   -1643.4060801356     0.33  
+   6     0.0016230378      -0.0014447524   -1643.4075248881     0.30  
+   7     0.0003437217      -0.0002036552   -1643.4077285433     0.27  
+   8     0.0001442967      -0.0000364360   -1643.4077649793     0.26  
+   9     0.0000646525      -0.0000042107   -1643.4077691900     0.50  
+  10     0.0000249059      -0.0000010391   -1643.4077702291     0.23  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4077702291 a.u.
+HOMO-LUMO GAP: 8.804 eV
+CENTER OF MASS: {27.543523, 38.005061, 15.721234} ANGS
+DIPOLE MOMENT: {7.129334, -0.934989, -3.322669} (|D| = 7.920968) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0020930236    -0.0004651331     0.0006447828
+    0.0040932142    -0.0006256582    -0.0018797999
+   -0.0022176552     0.0009988621    -0.0007590277
+   -0.0004126404     0.0023013587    -0.0007503143
+    0.0000495734    -0.0000109574    -0.0000293027
+    0.0022689805    -0.0020479636     0.0009343782
+   -0.0014233950    -0.0003255512     0.0005460739
+    0.0001494383     0.0011696053     0.0002625820
+    0.0015500715    -0.0017031702     0.0000868556
+   -0.0002277349     0.0010791126     0.0005697795
+   -0.0000383173    -0.0004623404     0.0001920513
+   -0.0012330715    -0.0015376281     0.0003009393
+   -0.0006455029     0.0011856784    -0.0008274977
+    0.0000365746    -0.0001348227     0.0000992737
+    0.0007188084    -0.0008207593     0.0003742206
+    0.0000074077    -0.0000173483     0.0000020233
+   -0.0010293516     0.0003054003     0.0002983740
+   -0.0004193380    -0.0008512127     0.0002877298
+   -0.0005587809    -0.0004746302     0.0015476881
+    0.0006768522    -0.0018656123     0.0002776014
+    0.0003201551    -0.0004124948    -0.0007699002
+    0.0000464129    -0.0000147910    -0.0000011803
+   -0.0013479510     0.0020769444     0.0004351673
+    0.0000723826    -0.0000586549    -0.0000337872
+    0.0000432541     0.0008018649     0.0002513208
+   -0.0005025057     0.0015432196     0.0005949170
+    0.0002695358     0.0011855685    -0.0006104579
+    0.0000058716    -0.0001038021     0.0000010115
+   -0.0004304851    -0.0001784981     0.0004307102
+    0.0005537094    -0.0021939794     0.0002359991
+   -0.0001048634    -0.0028413711    -0.0018209338
+   -0.0000856311    -0.0000666615     0.0000024832
+   -0.0001570314     0.0010678233     0.0001683072
+   -0.0010106914    -0.0006526236     0.0008411928
+    0.0004937745    -0.0004825657    -0.0012195338
+    0.0000713947    -0.0000457468    -0.0000544017
+    0.0039299187    -0.0026515663    -0.0004010275
+   -0.0027976859    -0.0048387384    -0.0006564533
+    0.0000540784    -0.0000154190     0.0000118532
+    0.0064909094     0.0064773912     0.0015829411
+    0.0000235286    -0.0000072973    -0.0001361056
+   -0.0040434624     0.0063821247    -0.0001555839
+   -0.0000340499    -0.0000211654    -0.0001062553
+    0.0005667915    -0.0028788759    -0.0010002791
+   -0.0001531903     0.0001674822     0.0000371930
+   -0.0029384877    -0.0015742430     0.0007070010
+   -0.0000382693    -0.0000036799    -0.0000141226
+    0.0006480443     0.0013531734    -0.0002447638
+   -0.0000817924    -0.0000929898    -0.0000355304
+   -0.0000292366     0.0000096589     0.0000713522
+    0.0000915353    -0.0000182749    -0.0001309747
+   -0.0009177042     0.0008704417     0.0016589453
+    0.0018157362     0.0015021885    -0.0018995997
+   -0.0000231216    -0.0000654153    -0.0000485175
+   -0.0000138067    -0.0000419955    -0.0000153824
+    0.0000893362    -0.0000001375     0.0001287368
+   -0.0001285083     0.0001258778     0.0000172494
+---------------------------------------------------
+Net gradient:  4.139621e-09  2.120163e-09  1.869055e-09
+Net torque:    3.532119e-05  2.234023e-05  2.252452e-05
+
+ Energy calculation finished, energy: -1.643407770E+03
+Testing convergence  in cycle   32
+    Energy  5.2360E-08 Target: 1.0000E-06 converged?  yes
+  Max step  5.6120E-03 Target: 1.8000E-03 converged?   no
+  RMS step  1.3946E-03 Target: 1.2000E-03 converged?   no
+  Max grad  4.6234E-04 Target: 4.5000E-04 converged?   no
+  RMS grad  9.2170E-05 Target: 3.0000E-04 converged?  yes
+ Predicted step length 4.1879E-03
+ Trust radius          5.0000E-01
+RMSD coordinate change for step 32 is  3.203e-04
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 0 matrix multiplies
+   1     0.2704110867   -1633.8620882064   -1633.8620882064     0.42  
+   2     0.1036334111      -8.5052058748   -1642.3672940813     0.50  
+   3     0.0330182889      -0.9071141018   -1643.2744081831     0.43  
+   4     0.0183248417      -0.1142643784   -1643.3886725615     0.37  
+   5     0.0028359394      -0.0173960180   -1643.4060685795     0.33  
+   6     0.0016292801      -0.0014562569   -1643.4075248365     0.30  
+   7     0.0003434647      -0.0002053003   -1643.4077301367     0.27  
+   8     0.0001443395      -0.0000368692   -1643.4077670059     0.26  
+   9     0.0000653016      -0.0000034915   -1643.4077704974     0.51  
+  10     0.0000250731      -0.0000010851   -1643.4077715825     0.23  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4077715825 a.u.
+HOMO-LUMO GAP: 8.804 eV
+CENTER OF MASS: {27.543524, 38.005068, 15.721232} ANGS
+DIPOLE MOMENT: {7.131956, -0.932256, -3.322957} (|D| = 7.923127) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0021896265    -0.0003530093     0.0006341002
+    0.0040915051    -0.0006307826    -0.0018825214
+   -0.0022193822     0.0009971025    -0.0007655691
+   -0.0004145444     0.0022891546    -0.0007648560
+    0.0000420150    -0.0000015030    -0.0000267520
+    0.0022704918    -0.0020488634     0.0009444249
+   -0.0014235160    -0.0003224248     0.0005499148
+    0.0001486310     0.0011611655     0.0002705064
+    0.0015533626    -0.0017025937     0.0000861226
+   -0.0002207177     0.0006849934     0.0007927336
+   -0.0000411629    -0.0000535550    -0.0000433439
+   -0.0012322580    -0.0015490602     0.0003142892
+   -0.0006095924     0.0011222023    -0.0007446789
+    0.0000022374    -0.0000625292     0.0000156292
+    0.0007247300    -0.0008345572     0.0003859770
+   -0.0000000469    -0.0000057771    -0.0000037856
+   -0.0010257755     0.0003058029     0.0002986224
+   -0.0004194952    -0.0008435032     0.0002777389
+   -0.0005628374    -0.0004771076     0.0015460107
+    0.0006718217    -0.0018600308     0.0002722832
+    0.0003965366    -0.0004134715    -0.0007678158
+   -0.0000209642    -0.0000252436     0.0000048983
+   -0.0013000455     0.0020322956     0.0003995944
+    0.0000212606    -0.0000226481     0.0000167940
+    0.0000287022     0.0008166939     0.0002267574
+   -0.0004005827     0.0014837797     0.0005348926
+    0.0002950140     0.0010882410    -0.0006004497
+   -0.0000027998    -0.0000164611     0.0000028663
+   -0.0004359880    -0.0001769024     0.0004191725
+    0.0005469503    -0.0021858938     0.0002259377
+   -0.0001551064    -0.0029057978    -0.0017810760
+   -0.0000240475    -0.0000065883    -0.0000289084
+   -0.0002003076     0.0010879271     0.0002101551
+   -0.0010163737    -0.0006484803     0.0008346550
+    0.0005515756    -0.0005094334    -0.0012788110
+    0.0000113156    -0.0000186279     0.0000044435
+    0.0039338315    -0.0026560978    -0.0004066147
+   -0.0027918815    -0.0048621811    -0.0006315584
+    0.0000315012     0.0000032962    -0.0000064760
+    0.0064988348     0.0064769855     0.0015953890
+    0.0000355849    -0.0000026866    -0.0001462807
+   -0.0040846388     0.0063982257    -0.0002162981
+    0.0000061031    -0.0000358510    -0.0000401755
+    0.0003687941    -0.0027757124    -0.0009519079
+    0.0000347342     0.0000639603    -0.0000188797
+   -0.0029558763    -0.0015877858     0.0007058382
+   -0.0000193438     0.0000101924    -0.0000145362
+    0.0006011174     0.0012579144    -0.0003477209
+   -0.0000316201     0.0000084422     0.0000636923
+    0.0000131410    -0.0000139468     0.0000309280
+   -0.0000094863     0.0000373043    -0.0000551776
+   -0.0009261939     0.0008541714     0.0016606657
+    0.0018551084     0.0014339485    -0.0019099066
+    0.0000086917    -0.0000533033     0.0000035499
+   -0.0000017502    -0.0000221645    -0.0000042001
+    0.0000169181     0.0000504287     0.0000790361
+   -0.0000245456     0.0000203519     0.0000306800
+---------------------------------------------------
+Net gradient:  2.775752e-09  5.573953e-09 -1.452375e-09
+Net torque:    3.589632e-05  2.185814e-05  2.359164e-05
+
+ Energy calculation finished, energy: -1.643407772E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle   33
+    Energy  1.3534E-06 Target: 1.0000E-06 converged?   no
+  Max step  2.1553E-03 Target: 1.8000E-03 converged?   no
+  RMS step  5.2762E-04 Target: 1.2000E-03 converged?  yes
+  Max grad  1.4628E-04 Target: 4.5000E-04 converged?  yes
+  RMS grad  3.4771E-05 Target: 3.0000E-04 converged?  yes
+ Predicted step length 2.0893E-03
+ Trust radius          5.0000E-01
+RMSD coordinate change for step 33 is  1.598e-04
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change         Energy        Time(s)
+------------------------------------------------------------------------
+Purifying guess...Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 0 matrix multiplies
+   1     0.2704602814   -1633.8626775970   -1633.8626775970     0.42  
+   2     0.1036398628      -8.5045969192   -1642.3672745161     0.50  
+   3     0.0330249394      -0.9071333013   -1643.2744078174     0.43  
+   4     0.0183248834      -0.1142640768   -1643.3886718942     0.37  
+   5     0.0028368297      -0.0173966165   -1643.4060685107     0.33  
+   6     0.0016290678      -0.0014563743   -1643.4075248850     0.30  
+   7     0.0003432125      -0.0002052506   -1643.4077301356     0.27  
+   8     0.0001442941      -0.0000368617   -1643.4077669974     0.26  
+   9     0.0000653002      -0.0000039423   -1643.4077709396     0.51  
+  10     0.0000250553      -0.0000010935   -1643.4077720331     0.23  
+------------------------------------------------------------------------
+FINAL ENERGY: -1643.4077720331 a.u.
+HOMO-LUMO GAP: 8.804 eV
+CENTER OF MASS: {27.543524, 38.005072, 15.721231} ANGS
+DIPOLE MOMENT: {7.132817, -0.931638, -3.323249} (|D| = 7.923952) DEBYE
+
+Running Mulliken population analysis...
+
+
+Gradient units are Hartree/Bohr
+---------------------------------------------------
+        dE/dX            dE/dY            dE/dZ
+   -0.0022582644    -0.0002772688     0.0006352419
+    0.0040985602    -0.0006359371    -0.0018844507
+   -0.0022170251     0.0010019201    -0.0007630840
+   -0.0003872857     0.0022970987    -0.0007923763
+    0.0000145156    -0.0000035899    -0.0000030991
+    0.0022632684    -0.0020539619     0.0009541224
+   -0.0014216026    -0.0003249997     0.0005530201
+    0.0001504263     0.0011639933     0.0002698915
+    0.0015513281    -0.0017044263     0.0000840430
+   -0.0002260570     0.0006275912     0.0008132587
+   -0.0000367317     0.0000015272    -0.0000622176
+   -0.0012369069    -0.0015515928     0.0003133522
+   -0.0005923863     0.0011006377    -0.0007250540
+   -0.0000098774    -0.0000408390    -0.0000040748
+    0.0007258882    -0.0008490387     0.0003893401
+   -0.0000061796     0.0000032464    -0.0000016406
+   -0.0010250475     0.0003063845     0.0002975702
+   -0.0004191954    -0.0008369093     0.0002708489
+   -0.0005646094    -0.0004774118     0.0015431730
+    0.0006720574    -0.0018587275     0.0002715768
+    0.0003970075    -0.0004403208    -0.0007615939
+   -0.0000139256    -0.0000013665     0.0000020325
+   -0.0012901723     0.0020064720     0.0004037215
+    0.0000064508    -0.0000051609     0.0000221447
+    0.0000177914     0.0008248848     0.0002223479
+   -0.0003736591     0.0014855707     0.0005140405
+    0.0003100103     0.0010511833    -0.0005938483
+   -0.0000085959     0.0000130463    -0.0000020097
+   -0.0004358048    -0.0001767022     0.0004138836
+    0.0005462301    -0.0021789350     0.0002199739
+   -0.0001728306    -0.0029286097    -0.0017839783
+   -0.0000037406     0.0000160229    -0.0000261610
+   -0.0002086916     0.0010811808     0.0002337479
+   -0.0010186274    -0.0006471219     0.0008340001
+    0.0005699172    -0.0005175222    -0.0012900378
+   -0.0000071783    -0.0000111918     0.0000174396
+    0.0039336762    -0.0026556335    -0.0004122452
+   -0.0027715439    -0.0048740286    -0.0006267743
+    0.0000014305     0.0000169262    -0.0000021053
+    0.0065567894     0.0064959678     0.0015047844
+   -0.0000067038    -0.0000310804    -0.0000446103
+   -0.0041123859     0.0063813697    -0.0002499480
+    0.0000292943    -0.0000119045    -0.0000008337
+    0.0003265691    -0.0027533018    -0.0009626299
+    0.0000690121     0.0000387507    -0.0000342626
+   -0.0029677259    -0.0015847529     0.0007067626
+   -0.0000029624     0.0000116966    -0.0000032290
+    0.0005972894     0.0012359819    -0.0003723682
+   -0.0000220695     0.0000336352     0.0000740467
+    0.0000189040    -0.0000125491     0.0000138212
+   -0.0000372537     0.0000356700    -0.0000325140
+   -0.0009604336     0.0008500910     0.0016342209
+    0.0018961648     0.0013844814    -0.0018571240
+    0.0000346368    -0.0000233389     0.0000131462
+   -0.0000060018     0.0000063634     0.0000036047
+   -0.0000101313     0.0000456788     0.0000385502
+    0.0000443895    -0.0000491441     0.0000245580
+---------------------------------------------------
+Net gradient:  5.053057e-10  4.859768e-09 -4.659778e-09
+Net torque:    3.559569e-05  2.196779e-05  2.390090e-05
+
+ Energy calculation finished, energy: -1.643407772E+03
+ Wolfe conditions fulfilled, increasing trust radius
+Testing convergence  in cycle   34
+    Energy  4.5062E-07 Target: 1.0000E-06 converged?  yes
+  Max step  7.7149E-04 Target: 1.8000E-03 converged?  yes
+  RMS step  2.6323E-04 Target: 1.2000E-03 converged?  yes
+  Max grad  7.4047E-05 Target: 4.5000E-04 converged?  yes
+  RMS grad  2.6372E-05 Target: 3.0000E-04 converged?  yes
+Converged!
+ converged
+
+DL-FIND Report:
+===============
+Optimisation algorithm: L-BFGS
+Number of steps in L-BFGS memory ...............         50
+ 
+Trust radius based on energy
+Maximum step length ............................  5.000E-01
+ 
+Coordinate system: Cartesian coordinates
+ 
+Number of atoms ................................         57
+Number of input geometries .....................          2
+Variables to be optimised ......................         63
+Restart information is written every ...........         10 steps
+This run has not been restarted.
+Number of energy evaluations on this processor .         34
+Number of steps ................................         34
+Number of accepted steps / line searches .......         34
+ 
+
+Timing report
+=============
+Module                                      CPU time            Wall clock time
+Total .................................   203.797 (100.00%)   200.291 (100.00%) seconds
+Energy and Gradient ...................   203.795 (100.00%)   200.289 (100.00%) seconds
+Step direction ........................     0.000 (  0.00%)     0.001 (  0.00%) seconds
+Coordinate transformation .............     0.000 (  0.00%)     0.000 (  0.00%) seconds
+Checkpoint file I/O ...................     0.000 (  0.00%)     0.000 (  0.00%) seconds
+XYZ-file I/O ..........................     0.000 (  0.00%)     0.000 (  0.00%) seconds
+Maximum memory usage ........................... 5.8816E+01 kB
+Writing out molden info
+Total processing time: 200.30 sec 
+
+ Job finished: Wed Jun 15 13:06:30 2022
+

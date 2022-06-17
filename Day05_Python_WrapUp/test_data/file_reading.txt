@@ -1,0 +1,5 @@
+This is just a normal text file.
+There are words.  There are sentences.  There are lines.  
+
+There was even a blank line.
+After this sentence is the end of the file, usually called "EOF".

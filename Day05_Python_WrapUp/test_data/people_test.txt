@@ -1,0 +1,8 @@
+Name                        Age Class                       GPA
+---------------------------------------------------------------
+Bobby                        25 First-Year               3.9500
+Charlie                      27 Second-Year              3.8700
+David                        26 First-Year               4.0000
+Esther                       24 First-Year               3.9600
+Frances                      28 Second-Year              3.9900
+Gloria                       27 First-Year               4.0000
